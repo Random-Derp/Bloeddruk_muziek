@@ -1,0 +1,160 @@
+---
+title: "Onderzoek naar de correlatie tussen hartslag en muziek"
+output:
+  html_document:
+    css: style.css
+    toc: yes
+    toc_depth: 3
+    toc_float:
+      collapsed: yes
+      smooth_scroll: yes
+author: 'Jort(), Mathijs(451514), Adib(), Bram(456146)'
+date: '24/4/2023'
+---
+
+## inleiding
+
+Het doel van dit onderzoek is om de relatie tussen muziek en hartslag en bloeddruk te onderzoeken. Om deze relatie te onderzoeken, zullen we de effecten van een enkel muziekstuk op de hartslag en bloeddruk van de deelnemers meten. We zullen deelnemers vragen om vijf minuten ontspannen te zitten voordat het experiment begint, zodat ze zich in een rustige en ontspannen toestand bevinden voordat we de metingen uitvoeren.
+
+Vervolgens zullen we de deelnemers laten luisteren naar één muziekstuk dat speciaal is geselecteerd om de hartslag te verhogen. We zullen hun hartslag en bloeddruk meten terwijl ze naar de muziek luisteren. Na het eerste muziekstuk zullen we opnieuw de hartslag en bloeddruk meten om te bepalen of er een significante verandering was in vergelijking met de metingen in rust. We zullen deze gegevens noteren en analyseren om te zien of er een significante relatie is tussen muziek en hartslag en bloeddruk.
+
+Het onderzoek zal worden uitgevoerd met behulp van de Omron hartslag- en bloeddrukmeter. De deelnemers zullen worden geselecteerd op basis van leeftijd en geslacht om ervoor te zorgen dat er een representatieve steekproef wordt genomen. We zullen ook een vragenlijst gebruiken om eventuele oorzaken van significante verschillen in de gegevens te ontdekken.
+
+Door de relatie tussen muziek en hartslag en bloeddruk te onderzoeken, hopen we meer inzicht te krijgen in hoe muziek het menselijk lichaam beïnvloedt. Deze informatie kan worden gebruikt om het gebruik van muziek als therapie verder te onderzoeken en te ontwikkelen.
+
+## Onderzoeksvraag
+
+ Beïnvloedt De muziek de hartslag en bloeddruk van studenten in het hoger onderwijs?.
+
+ 
+
+## Protocol
+
+### Benodigheden
+ * Hartslag/bloeddruk meter 
+ * Vragenlijst
+ * koptelefoon
+ * onrustgevende muziek
+ * pulse oximeter
+
+1. Wij gaan ervoor zorgen dat alle deelnemers aan het onderzoek ontspannen en rustig zijn voordat het onderzoek begint door ze naar rustgevende muziek te laten luisteren. De laborant zal de deelnemers vragen om een paar minuten rustig te zitten en te ontspannen voordat ze aan het experiment beginnen.
+
+2. Geef ondertussen een vragenlijst om oorzaken van significante verschillen te ontdekken.De koptelefoon blijft op tijdens de metingen.
+
+3. Leg het doel van het onderzoek uit aan de deelnemers en geef aan dat ze naar één muziekstuk gaan luisteren. Het muziekstuk zal hun hartslag verhogen. Je kunt hiervoor muziek uit topnummers gebruiken om de hartslag te verhogen. Laat de deelnemers weten dat ze tijdens het experiment hun hartslag en bloeddruk gemeten krijgen en dat ze moeten proberen stil te zitten en te ontspannen terwijl ze naar de muziek luisteren. ABC zal ervoor zorgen dat de deelnemers een headset dragen tijdens het luisteren naar de muziek.
+
+4. Neem de hartslag en bloeddruk van de deelnemer op in rust voordat het experiment begint. Dit kan worden gedaan met een hartslag- en bloeddrukmeter of een ander apparaat dat deze waarden nauwkeurig kan meten. Zorg ervoor dat de deelnemer ontspannen en stil zit terwijl de meting wordt uitgevoerd.
+
+5. Plaats de bloeddrukmeter op de bovenarm van de deelnemer en zorg ervoor dat deze goed vastzit.Zet daarna de oximeter op de wijsvinger van de andere arm.
+
+6. Laat de deelnemer naar het eerste muziekstuk luisteren en neem de hartslag en bloeddruk van de deelnemer op tijdens het luisteren naar het muziekstuk. Zorg ervoor dat de deelnemer stil zit en ontspannen blijft tijdens de meting.
+
+7. Na het eerste muziekstuk, neemt ABC opnieuw de hartslag en bloeddruk van de deelnemer op. Plaats de bloeddrukmeter opnieuw op de bovenarm van de deelnemer en zorg ervoor dat deze goed vastzit. Zorg ervoor dat de deelnemer stil zit en ontspannen blijft tijdens de meting.
+
+8. Noteer de gemeten hartslag- en bloeddruk voor het muziekstuk van elke deelnemer.
+
+9. Herhaal stap 5-8 voor de volgende muziekstukken.
+
+10. Verzamel aanvullende gegevens, zoals de leeftijd van de deelnemers,En vragen als heb je hartproblemen/net gesport/caffeine genuttigd, om te gebruiken als controlevariabelen.
+
+11. Analyseer de gegevens om te zien of er een significante verandering was in de hartslag en bloeddruk van de deelnemers bij het luisteren naar het muziekstuk.
+
+12. Trek conclusies uit de resultaten van het onderzoek en rapporteer de bevindingen.
+
+13. Zorg ervoor dat alle gegevens worden genoteerd in een csv-bestand en dat dit bestand wordt opgeslagen in het daarvoor bestemde kanaal op Teams.
+
+14. Controleer de nauwkeurigheid van de gegevens voordat ze worden opgeslagen en bewaard.
+
+15. Garandeer de vertrouwelijkheid van de gegevens en zorg ervoor dat de privacy van de deelnemers wordt beschermd.
+ 
+## Belangrijke factoren
+Hebben ze net een fysieke activiteit gehad?
+Drinken ze regelmatig caffeine/hebben ze vandaag caffeine gehad.
+Hebben hart en vaat problemen.
+zijn ze een ochtend of avond mens.
+
+
+## hypothese
+
+De muziek zorgt bij de studenten voor een hogere hartslag en bloeddruk.
+
+
+
+## nulhypothese
+
+De muziek heeft geen invloed op de hartslag en bloeddruk bij studenten.
+
+ 
+
+## experiment
+
+## Grafieken
+
+```{r visualize, echo = FALSE}
+library(ggplot2)
+
+# Load the data
+mydata <- read.table(file = "mydata.csv",
+                     header = TRUE,
+                     sep = ",")
+
+# Create a scatterplot of age vs. mean blood pressure
+mydata$mean_bp_voor <- (mydata$boven_bloeddruk_voor + mydata$onder_bloeddruk_voor)/2 # calculate mean blood pressure
+mydata$mean_bp_na <- (mydata$boven_bloeddruk_na + mydata$onder_bloeddruk_na)/2 # calculate mean blood pressure
+ggplot(mydata, aes(x = leeftijd, y = mean_bp_voor)) +
+  geom_point() +
+  stat_summary(aes(group = leeftijd), fun = mean, geom = "point", size = 3, color = "red") +
+  labs(x = "Leeftijd (jaar)", y = "Gemiddelde bloeddruk (mmHg)", title = "Gemiddelde bloeddruk vs. Leeftijd (Voor)") +
+  theme_minimal() 
+
+ggplot(mydata, aes(x = leeftijd, y = mean_bp_na)) +
+  geom_point() +
+  stat_summary(aes(group = leeftijd), fun = mean, geom = "point", size = 3, color = "red") +
+  labs(x = "Leeftijd (jaar)", y = "Gemiddelde bloeddruk (mmHg)", title = "Gemiddelde bloeddruk vs. Leeftijd (Na)") +
+  theme_minimal() 
+
+
+
+```
+
+
+
+```{r visualize2, echo = FALSE}
+ggplot(mydata, aes(x = sexe, y = bpm_voor, fill = sexe)) +
+  geom_boxplot() + # boxplot visualization
+  labs(x = "Sexe", y = "Hartslag (bpm)", title= "Hartslag bij mannen vs vrouwen (Voor)") + # axis labels
+  theme_minimal() # create cleaner plot
+
+ggplot(mydata, aes(x = sexe, y = bpm_na, fill = sexe)) +
+  geom_boxplot() + # boxplot visualization
+  labs(x = "Sexe", y = "Hartslag (bpm)", title= "Hartslag bij mannen vs vrouwen (Na)") + # axis labels
+  theme_minimal() # create cleaner plot
+
+
+
+```
+
+
+ 
+
+## Data verzamelen
+
+
+
+## reflectie
+
+
+
+
+
+
+## conclusie
+
+
+
+
+
+## conclusie
+
+
+
