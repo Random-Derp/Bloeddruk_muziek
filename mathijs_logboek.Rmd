@@ -1,0 +1,19 @@
+---
+title: "Onderzoek naar de correlatie tussen hartslag en muziek"
+output:
+  html_document:
+    css: style.css
+    toc: yes
+    toc_depth: 3
+    toc_float:
+      collapsed: yes
+      smooth_scroll: yes
+author: Mathijs Snijder
+date: '09/05/2023'
+---
+
+## Metingen
+  * 11-05-2023 eerste metingen binnen het lokaal
+  * 12-05-2023 eerste metingen buiten het lokaal
+  * 15-05-2023 weer metingen buiten het lokaal
+  * 22-05-2023 logboek aangemaakt
