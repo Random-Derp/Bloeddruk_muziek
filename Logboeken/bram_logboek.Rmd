@@ -16,6 +16,7 @@ date: '9/5/2023'
  * 11-5 eerste meetmoment in het lokaal
  * 12-5 eerste meetmoment buiten het lokaal
  * 15-5 tweede meetmoment buiten het lokaal
+ * 2-6 derde meetmoment buiten het lokaal, metingen gedaan door Mathijs en Bram
 
 ## Uitleg
 bpm_diff is het hartslag verschil; (bpm_na - bpm_voor)
