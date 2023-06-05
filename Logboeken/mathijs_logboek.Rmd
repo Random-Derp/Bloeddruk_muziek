@@ -15,5 +15,8 @@ date: '09/05/2023'
 ## Metingen
   * 11-05-2023 eerste metingen binnen het lokaal
   * 12-05-2023 eerste metingen buiten het lokaal
-  * 15-05-2023 weer metingen buiten het lokaal
+  * 15-05-2023 metingen buiten het lokaal
   * 22-05-2023 logboek aangemaakt
+  * 31-05-2023 grafieken gemaakt met beschikbare data
+  * 02-06-2023 metingen buiten lokaal
+  * 05-06-2023 laatste metingen buiten lokaal en logboek bijgewerkt
