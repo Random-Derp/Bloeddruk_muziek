@@ -30,7 +30,7 @@ Door de relatie tussen muziek en hartslag en bloeddruk te onderzoeken, hopen we 
 
 ## Protocol
 
-### Benodigheden
+### Benodigdheden
  * Hartslag/bloeddruk meter (Omron M7 intelli IT HEM-7322T-E, 2017 uitvoering)
  * koptelefoon (Sennheiser H215)
  * onrustgevende muziek (Terror Tourette - Radio Edit | Dr.CoZmo)
@@ -41,7 +41,7 @@ Door de relatie tussen muziek en hartslag en bloeddruk te onderzoeken, hopen we 
 
 3. Leg het doel van het onderzoek uit aan de deelnemers en geef aan dat ze naar één muziekstuk gaan luisteren. Het muziekstuk zal hun hartslag verhogen. Het nummer staat genoteerd bij Benodigdheden. Laat de deelnemers weten dat ze tijdens het experiment hun hartslag en bloeddruk gemeten krijgen en dat ze moeten proberen stil te zitten en te ontspannen terwijl ze naar de muziek luisteren. De laborant zal ervoor zorgen dat de deelnemers een headset/koptelefoon dragen tijdens het luisteren naar de muziek.
 
-4. Neem de hartslag en bloeddruk van de deelnemer op in rust. Dit wordt gedaan met de bloeddrukmeter en de oximeter die ook bij Benodigheden staan genoteerd. Zorg ervoor dat de deelnemer ontspannen en stil zit terwijl de meting wordt uitgevoerd.
+4. Neem de hartslag en bloeddruk van de deelnemer op in rust. Dit wordt gedaan met de bloeddrukmeter en de oximeter die ook bij Benodigdheden staan genoteerd. Zorg ervoor dat de deelnemer ontspannen en stil zit terwijl de meting wordt uitgevoerd.
 
 5. Plaats de bloeddrukmeter op de bovenarm van de deelnemer en zorg ervoor dat deze goed vastzit. Zet daarna de oximeter op de wijsvinger van de andere arm.
 
