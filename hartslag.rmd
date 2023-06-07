@@ -31,29 +31,25 @@ Door de relatie tussen muziek en hartslag en bloeddruk te onderzoeken, hopen we 
 ## Protocol
 
 ### Benodigheden
- * Hartslag/bloeddruk meter 
- * Vragenlijst
- * koptelefoon
- * onrustgevende muziek
- * pulse oximeter
+ * Hartslag/bloeddruk meter (Omron M7 intelli IT HEM-7322T-E, 2017 uitvoering)
+ * koptelefoon (Sennheiser H215)
+ * onrustgevende muziek (Terror Tourette - Radio Edit | Dr.CoZmo)
+ * pulse oximeter (Contec CMS50D1)
+ * Smartphone (In dit geval de OnePlus Nord 2)
 
-1. Wij gaan ervoor zorgen dat alle deelnemers aan het onderzoek ontspannen en rustig zijn voordat het onderzoek begint door ze naar rustgevende muziek te laten luisteren. De laborant zal de deelnemers vragen om een paar minuten rustig te zitten en te ontspannen voordat ze aan het experiment beginnen.
+1. Wij gaan ervoor zorgen dat alle deelnemers aan het onderzoek ontspannen en rustig zijn voordat het onderzoek begint door ze naar rustgevende muziek te laten luisteren. De laborant zal de deelnemers vragen om rustig te zitten en te ontspannen voordat ze aan het experiment beginnen. Het onderzoek wordt gestart wanneer de pulse oximeter aangeeft dat de hartslag niet meer afneemt.
 
-2. Geef ondertussen een vragenlijst om oorzaken van significante verschillen te ontdekken.De koptelefoon blijft op tijdens de metingen.
+3. Leg het doel van het onderzoek uit aan de deelnemers en geef aan dat ze naar één muziekstuk gaan luisteren. Het muziekstuk zal hun hartslag verhogen. Het nummer staat genoteerd bij Benodigdheden. Laat de deelnemers weten dat ze tijdens het experiment hun hartslag en bloeddruk gemeten krijgen en dat ze moeten proberen stil te zitten en te ontspannen terwijl ze naar de muziek luisteren. De laborant zal ervoor zorgen dat de deelnemers een headset/koptelefoon dragen tijdens het luisteren naar de muziek.
 
-3. Leg het doel van het onderzoek uit aan de deelnemers en geef aan dat ze naar één muziekstuk gaan luisteren. Het muziekstuk zal hun hartslag verhogen. Je kunt hiervoor muziek uit topnummers gebruiken om de hartslag te verhogen. Laat de deelnemers weten dat ze tijdens het experiment hun hartslag en bloeddruk gemeten krijgen en dat ze moeten proberen stil te zitten en te ontspannen terwijl ze naar de muziek luisteren. ABC zal ervoor zorgen dat de deelnemers een headset dragen tijdens het luisteren naar de muziek.
+4. Neem de hartslag en bloeddruk van de deelnemer op in rust. Dit wordt gedaan met de bloeddrukmeter en de oximeter die ook bij Benodigheden staan genoteerd. Zorg ervoor dat de deelnemer ontspannen en stil zit terwijl de meting wordt uitgevoerd.
 
-4. Neem de hartslag en bloeddruk van de deelnemer op in rust voordat het experiment begint. Dit kan worden gedaan met een hartslag- en bloeddrukmeter of een ander apparaat dat deze waarden nauwkeurig kan meten. Zorg ervoor dat de deelnemer ontspannen en stil zit terwijl de meting wordt uitgevoerd.
+5. Plaats de bloeddrukmeter op de bovenarm van de deelnemer en zorg ervoor dat deze goed vastzit. Zet daarna de oximeter op de wijsvinger van de andere arm.
 
-5. Plaats de bloeddrukmeter op de bovenarm van de deelnemer en zorg ervoor dat deze goed vastzit.Zet daarna de oximeter op de wijsvinger van de andere arm.
+6. Als alle apparaten aan de persoon zitten kun je de bloeddrukmeter aandrukken en wacht je tot deze een uitslag geeft. Dit wordt genoteerd.
 
-6. Laat de deelnemer naar het eerste muziekstuk luisteren en neem de hartslag en bloeddruk van de deelnemer op tijdens het luisteren naar het muziekstuk. Zorg ervoor dat de deelnemer stil zit en ontspannen blijft tijdens de meting.
+7. Herhaal nu hetzelfde maar deze keer wordt er muziek afgespeeld. Druk de bloeddrukmachine aan zodra het nummer 10 seconden bezig is.
 
-7. Na het eerste muziekstuk, neemt ABC opnieuw de hartslag en bloeddruk van de deelnemer op. Plaats de bloeddrukmeter opnieuw op de bovenarm van de deelnemer en zorg ervoor dat deze goed vastzit. Zorg ervoor dat de deelnemer stil zit en ontspannen blijft tijdens de meting.
-
-8. Noteer de gemeten hartslag- en bloeddruk voor het muziekstuk van elke deelnemer.
-
-9. Herhaal stap 5-8 voor de volgende muziekstukken.
+8. Noteer de gemeten hartslag- en bloeddruk.
 
 10. Verzamel aanvullende gegevens, zoals de leeftijd van de deelnemers,En vragen als heb je hartproblemen/net gesport/caffeine genuttigd, om te gebruiken als controlevariabelen.
 
@@ -65,13 +61,13 @@ Door de relatie tussen muziek en hartslag en bloeddruk te onderzoeken, hopen we 
 
 14. Controleer de nauwkeurigheid van de gegevens voordat ze worden opgeslagen en bewaard.
 
-15. Garandeer de vertrouwelijkheid van de gegevens en zorg ervoor dat de privacy van de deelnemers wordt beschermd.
+15. Garandeer de vertrouwelijkheid van de gegevens en zorg ervoor dat de privacy van de deelnemers wordt beschermd. Er worden geen namen gevraagd.
  
 ## Belangrijke factoren
-Hebben ze net een fysieke activiteit gehad?
+Hebben ze net een fysieke activiteit gehad.
 Drinken ze regelmatig caffeine/hebben ze vandaag caffeine gehad.
-Hebben hart en vaat problemen.
-zijn ze een ochtend of avond mens.
+Hebben ze hart en vaat problemen.
+Hebben ze medicatie genomen
 
 
 ## hypothese
