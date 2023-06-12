@@ -285,7 +285,7 @@ library(ggplot2)
 
 file <- read.csv("/homes/blkoobs/Documents/Kwartaal_4/R-Code/Bloeddruk_en_muziek/data.csv")
 
-ggplot(data = file, mapping = aes(x = bpm_voor, y = bpm_diff)) +
+ggplot(data = file, mapping = aes(x = bpm_voor, y = bpm verschil)) +
 geom_point() +
   geom_smooth()
 
