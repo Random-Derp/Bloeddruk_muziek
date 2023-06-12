@@ -62,6 +62,7 @@ Met dit onderzoek kunnen een aantal hypotheses beantwoord worden. Verhoogd ruige
 # Materialen en Methoden
 
 https://github.com/Random-Derp/Bloeddruk_muziek
+Voor protocol kijk ook folder protocol.
 
 ## materialen
 
