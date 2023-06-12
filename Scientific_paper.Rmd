@@ -22,18 +22,8 @@ output:
 
 ---
 
-# Introductie op deze template
-
-**Dit hoofdstuk niet in je eigen paper toevoegen!**
-
-Dit template bevat alle verplichte onderdelen van de paper die je moet schrijven. De titels van de secties mag je NIET wijzigen. Voor elk onderdeel is gegeven wat erin thuis hoort en hoe je dat kan aanpakken. Ook is er aangegeven hoeveel woorden er minimaal en maximaal in de sectie gebruikt mogen worden. In totaal mag je artikel niet minder dan 1000 en niet meer dan 2000 woorden bevatten.
-
-Gebruik de [wordcount plugin](https://github.com/benmarwick/wordcountaddin) om het aantal woorden te tellen van een sectie, en voeg aan het einde een totaal in (zoals al aanwezig in deze template).
 
 
-## Setup *Chunk* {#setup-chunk}
-
-Aan het begin van je paper kan je een zogenaamde *setup chunk* toevoegen. Hierin kan je het gedrag van `knitr` configureren en de bibliotheken laden die je in je code gebruikt. Hieronder is een voorbeeld van zo'n *setup chunk*.
 
 ```{r setup, message=FALSE, warning=FALSE, include=FALSE}
 knitr::opts_chunk$set(out.width = '100%', dpi=300) # configuratie voor figuur grootte en resolutie
@@ -42,40 +32,8 @@ knitr::opts_chunk$set(echo = FALSE) # Deze regel zorgt ervoor GEEN ENKELE chunk 
 library(ggplot2)
 ```
 
-**NB** Gebruik altijd een naam voor iedere chunk. Dat maakt het *debuggen* van problemen bij het *knitten* van je RMarkdown document veel gemakkelijker.
-
-## Code "*Chunks*" wel of niet tonen
-
-In principe laat je code nooit zien in een publicatie, behalve als de code expliciet besproken wordt en een essentieel onderdeel vormt van je werk. Je kan code gemakkelijk verbergen door gebruik te maken van de optie `echo=FALSE` in de chunk header. Ook storende output kan je eventueel verbergen door gebruik te maken van `message=FALSE` of `warning=FALSE`. Eventueel kan je all chunks in een keer verbergen door dit in je *setup chunk* te plaatsen: `knitr::opts_chunk$set(echo = FALSE)`.
-
-## Referenties / citeren {#refs}
-
-Voor alle secties geldt dat je referenties kan gebruiken naar andere publicaties (externe referenties ofwel citatie) of naar secties, tabellen of figuren in je eigen publicatie (interne referenties). Voor externe referenties gebruik je deze notatie: `[@<ref_key]`, bijvoorbeeld `[@xie2013ddrk]`. Hier gebruik ik hem echt: [@xie2013ddrk]. De *processing engine* zal in het bibliografie bestand zoals opgegeven in de ***yaml header*** van dit bestand (`simple_template.bib`) zoeken naar de referentie met deze naam en vervolgens de hele referentie onderaan in het document opnemen. Kijk vooral in het `.bin` document hoe je deze kan gebruiken.
-
-Interne referenties naar tabellen, figuren, equations en secties kan je maken door deze syntax te gebruiken: `\@ref(fig:<figuur-naam>)` waarbij `<figuur-naam>` de naam is van het chunk waarin de figuur gemaakt wordt. Hetzelfde werkt voor tabellen: `\@ref(tab:<tabel-naam>)`. Een sectie kan je labelen door er `{#label-naam}` achter te zetten. Bijvoorbeeld, dit `\@ref(setup-chunk)` linkt terug naar de sectie over de setup chunk in sectie [\@ref(setup-chunk)].
-
-Zie ook de hoofdstukken in het geweldige book over [bookdown](https://bookdown.org/yihui/bookdown/) [hier](https://bookdown.org/yihui/bookdown/cross-references.html) en [hier](https://bookdown.org/yihui/rmarkdown-cookbook/cross-ref.html)
-
-Voor de rest: GIYF!
-
-## Taalgebruik
-
-Wetenschappelijk taalgebruik is heel anders dan dagelijks communiceren - laat staan de taal die in online wordt gebruikt in bv Whatsapp of Instagram! Wetenschappelijk taalgebruik is formeel, onpersoonlijk en  ondubbelzinnig.
-Een klein voorbeeld: Je schrijft nooit "ik heb de verandering van zoutconcentratie bij langduring huilen onderzocht" maar "de verandering van zoutconcentratie in de tijd bij aanhoudend huilen is onderzocht" 
-
-Natuurlijk moeten spelling en grammatica (zo goed als) foutloos zijn! RStudio heeft redelijk goede spellingscontrole, ook voor Nederlands (alhoewel je deze misschien wel apart moet installeren). Gebruik deze!
-
-
-Alle volgende onderdelen moet je opnemen in je eigen artikel. Let vooral ook op het minimu
 
 # Introductie
-
-Je start altijd met de maatschappelijke drijfveer voor je onderzoek; waarom is het van belang dat dit onderzoek is uitgevoerd?
-Vervolgens bespreek je de achtergronden van je onderzoek. Wat is er al eerder onderzocht op dit vlak en wat mist er juist nog; welke speciale technieken heb je gebruikt? Refereer zorgvuldig naar bronnen die je hebt gebruikt - zie ook paragraaf \@ref(refs).
-
-Je eindigt de introductie met de doelstelling(en) van jouw onderzoek, en hoe je deze doelstellingen denkt te gaan verwezenlijken; de aanpak. Geef hier ook eventuele hypothesen. 
-
-De introductie bevat tussen de 400-800 woorden.
 Al jaren luisteren mensen naar muziek als ze aan het sporten zijn, auto rijden of aan het werk zijn. Tegenwoordig speelt muziek daardoor ook een belangrijk onderdeel voor mensen.
 
 Het geeft ons motivatie, het brengt mensen tot rust en kan zelfs mensen laten huilen.
@@ -104,25 +62,9 @@ Met dit onderzoek kunnen een aantal hypotheses beantwoord worden. Verhoogd ruige
 
 # Materialen en Methoden
 
-Materialen en Methoden beschrijft verhalend wat je hebt gebruikt (data, tools) en wat je hebt gedaan (ontwikkelde methodes). **_Het is essentieel dat dit hoofdstuk je onderzoek reproduceerbaar en valideerbaar maakt_**. Verwijs bij de start van dit hoofdstuk naar je code repository (meestal je github link).
-
-Neem referenties op!
-
-De materialen zijn de meetinstrumenten die je hebt gebruikt, maar ook bijvoorbeeld datasets die je hebt gedownload.
-
-Beschrijf de gebruikte software tools, alsmede de bibliotheken/plugins, met naam, versie, referentie en gebruiksdoel (in dit project). Dit kan eventueel in een tabel an als die lang is mag het een online bijlage zijn.
-
-Beschrijf bestaande methodologieën met hun relevantie voor je project. Geef het doel, de toepassing en welke software en parameters er zijn gebruik. Voeg eventueel een flowchart toe.
-Beschrijf de gebruikte statistische methoden.
-
-Beschrijf wat je zelf in het kader van dit onderzoek hebt ontwikkeld aan methodologieën. Geef de naam van scripts/programma’s en waar deze (in je repo) te vinden zijn.
-
-Deze sectie bevat tussen de 400-800 woorden.
-Methode 
-
 https://github.com/Random-Derp/Bloeddruk_muziek
 
-#materialen
+# materialen
 
  * Hartslag/bloeddruk meter (Omron M7 intelli IT HEM-7322T-E, 2017 uitvoering)
 
