@@ -331,6 +331,7 @@ wordcountaddin:::text_stats()
 ```
 
 # Referenties
+Darki, Cyrus, et al. "The Effect of Classical Music on Heart Rate, Blood Pressure, and Mood." Cureus 14.7 (2022).
 https://www.cureus.com/articles/92593-the-effect-of-classical-music-on-heart-rate-blood-pressure-and-mood#!/#results
 
 https://www.uva.nl/shared-content/faculteiten/nl/faculteit-der-maatschappij-en-gedragswetenschappen/nieuws/2020/12/muziek-en-stress.html?cb 
