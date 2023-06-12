@@ -20,3 +20,5 @@ date: '09/05/2023'
   * 31-05-2023 grafieken gemaakt met beschikbare data
   * 02-06-2023 metingen buiten lokaal
   * 05-06-2023 laatste metingen buiten lokaal en logboek bijgewerkt
+  * 09-06-2023 gewerkt aan scientific paper, discussie en conclusie
+  * 12-06-2023 gewerkt aan scientific paper, discussie en conclusie afgemaakt
