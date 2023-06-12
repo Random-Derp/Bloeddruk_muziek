@@ -256,6 +256,8 @@ geom_boxplot() +
   guides(fill="none") +
   theme_minimal() +
   ylab("bpm verschil")
+
+
 ```
 Figuur 3:In deze grafiek wordt het verschil in bpm verschil op verschillende tijdstippen getoond. De x-as is de bpm verschil en de y-as is het tijdstip. Er valt op te merken dat de meeste toename was rond 2-4 uur 's middags en 8-10 uur 's ochtends. Rond 10-12 waren er wel een paar uitschieters, maar het gemiddelde lag rond de nul. Rond 12-2 was er weer een toename in bpm. Dit schetst een beeld van op welke tijden van de dag de reactie het heftigst is.   
 ## Figuur 4: Verschil in bpm tussen factoren zoals caffeine
@@ -276,7 +278,7 @@ print(paste("p-value =",t.test(bpm_diff ~ caffeine, data = file)$p.value))
 ```
 Figuur 4: In deze grafiek wordt er getoond hoe heftig de reactie op de muziek was. De betekenis van de kleuren is als volgt; rood als er caffeine is geconsumeerd die dag, blauw als er geen caffeine is genomen maar 1 van de andere factoren en grijs als er geen uitzonderingen waren. Op de x-as wordt staan de 3 variabelen die net genoemd zijn. Er valt duidelijk te zien in de grafiek dat de factoren wel degelijk een impact hebben gehad op de metingen. De grijze boxplot is ook opmerkelijk laag vergeleken de blauwe en de rode. De blauwe heeft een grotere verspreiding dan de rode, maar de rode, dus de boxplot die caffeine voorsteld, is consistent hoog. Dit laat dus zien dat caffeine een grote factor is bij dit soort onderzoeken.
 ## Figuur 5: Correlatie tussen bpm in rust en bpm verschil
-```{r tests}
+```{r bpm voor en bpm verschil}
 library(ggplot2)
 
 file <- read.csv("/homes/blkoobs/Documents/Kwartaal_4/R-Code/Bloeddruk_en_muziek/data.csv")
@@ -284,7 +286,8 @@ file <- read.csv("/homes/blkoobs/Documents/Kwartaal_4/R-Code/Bloeddruk_en_muziek
 ggplot(data = file, mapping = aes(x = bpm_voor, y = bpm_diff)) +
 geom_point() +
   geom_smooth()
-
+ 
+print(paste("p-value =",t.test(file$bpm_voor, file$bpm_na, paired = TRUE, alternative = "less"))[3])
 ```
 Figuur 5:In deze grafiek wordt de correlatie tussen bpm en het effect van muziek op de bpm getoond. Op de x-as hebben we de bpm_voor, oftewel de bpm die gemeten is voordat er muziek werd afgespeeld, en op de y-as hebben we de bpm verschil, oftewel het verschil tussen de eerste bpm meting en de tweede. De lijn geeft het gemiddelde aan van de bpm verschil en bpm_voor. Er valt op te merken dat mensen met een lagere bpm in rust een heftigere reactie vertonen dan de mensen met een hogere bpm.
 
