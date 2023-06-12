@@ -268,6 +268,8 @@ library(ggplot2)
 
 file <- read.csv("/homes/blkoobs/Documents/Kwartaal_4/R-Code/Bloeddruk_en_muziek/data.csv")
 
+file$tijdstip <- factor(file$tijdstip,levels = c("8-10", "10-12", "12-2", "2-4"))
+
 ggplot(data = file, mapping = aes(x = tijdstip, y = bpm_diff)) +
 geom_boxplot()
 
