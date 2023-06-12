@@ -158,7 +158,9 @@ Voorzie je figuren van een nummer en een beschrijvende titel. Zorg voor correcte
 ## Figuur 1: Verschil tussen bpm verschil tussen mannen en vrouwen
 ```{r gender en bpm, echo = FALSE}
 library(ggplot2)
+# read file
 file <- read.csv("/homes/blkoobs/Documents/Kwartaal_4/R-Code/Bloeddruk_en_muziek/data.csv")
+# give data plot
 ggplot(data = file, mapping = aes(x = sexe, y = bpm_diff)) +
 geom_boxplot(fill = c("#7caab9","#e97777")) +
   theme_minimal() +
