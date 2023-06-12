@@ -334,8 +334,6 @@ wordcountaddin:::text_stats()
 Darki, Cyrus, et al. "The Effect of Classical Music on Heart Rate, Blood Pressure, and Mood." Cureus 14.7 (2022).
 https://www.cureus.com/articles/92593-the-effect-of-classical-music-on-heart-rate-blood-pressure-and-mood#!/#results
 
-https://www.uva.nl/shared-content/faculteiten/nl/faculteit-der-maatschappij-en-gedragswetenschappen/nieuws/2020/12/muziek-en-stress.html?cb 
-
 Feneberg, Anja C., et al. "The effects of music listening on somatic symptoms and stress markers in the everyday life of women with somatic complaints and depression." Scientific Reports 11.1 (2021): 1-12.
 https://www.nature.com/articles/s41598-021-03374-w
 
