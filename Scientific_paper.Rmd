@@ -129,7 +129,94 @@ Beschrijf de gebruikte statistische methoden.
 Beschrijf wat je zelf in het kader van dit onderzoek hebt ontwikkeld aan methodologieën. Geef de naam van scripts/programma’s en waar deze (in je repo) te vinden zijn.
 
 Deze sectie bevat tussen de 400-800 woorden.
+Methode 
 
+https://github.com/Random-Derp/Bloeddruk_muziek
+
+#materialen
+
+ * Hartslag/bloeddruk meter (Omron M7 intelli IT HEM-7322T-E, 2017 uitvoering)
+
+ * koptelefoon (Sennheiser H215)
+
+ * onrustgevende muziek (Terror Tourette - Radio Edit | Dr.CoZmo)
+
+ * pulse oximeter (Contec CMS50D1)
+
+ * Smartphone (In dit geval de OnePlus Nord 2)
+
+Dit onderzoek is op de volgende manier uitgevoerd:
+
+Eerst wordt ervoor gezorgd dat alle deelnemers aan het onderzoek ontspannen en rustig zijn voordat het onderzoek begint door ze naar rustgevende muziek te laten luisteren. De laborant zal de deelnemers vragen om rustig te zitten en te ontspannen voordat ze aan het experiment beginnen. Het onderzoek wordt gestart wanneer de pulse oximeter aangeeft dat de hartslag niet meer afneemt.
+
+Daarna wordt het doel van het onderzoek uit aan de deelnemers en geef aan dat ze naar één muziekstuk gaan luisteren. Het muziekstuk zal hun hartslag verhogen. Het nummer staat genoteerd bij Benodigdheden. Laat de deelnemers weten dat ze tijdens het experiment hun hartslag en bloeddruk gemeten krijgen en dat ze moeten proberen stil te zitten en te ontspannen terwijl ze naar de muziek luisteren. De laborant zal ervoor zorgen dat de deelnemers een headset/koptelefoon dragen tijdens het luisteren naar de muziek.
+
+Vervolgens wordt de hartslag en bloeddruk van de deelnemer opgenomen in rust. Dit wordt gedaan met de bloeddrukmeter en de oximeter die ook bij benodigdheden staan genoteerd. Er wordt voor gezorgd dat de deelnemer ontspannen en stil zit terwijl de meting wordt uitgevoerd.
+
+De bloeddrukmeter wordt dan op de bovenarm van de deelnemer geplaatst en er wordt voor gezorgd dat deze goed vastzit. Daarna wordt  de oximeter op de wijsvinger van de andere arm geplaatst.
+
+Als alle apparaten aan de persoon zitten werd de bloeddrukmeter aangedrukt en werd er gewacht tot deze een uitslag geeft. Dit wordt genoteerd door een andere laborant.
+
+Daarna wordt hetzelfde herhaald, maar deze keer wordt er muziek gespeeld. De bloeddrukmeter wordt aangedrukt  zodat het nummer 10 seconden bezig is.
+
+Daarna werden de waarden weer genoteerd.
+
+Toen werden nog een aantal gegevens verzameld, zoals de leeftijd van de deelnemers, en vragen als heb je hartproblemen/net gesport/cafeïne genuttigd, om te gebruiken als controlevariabelen. Vervolgens werden alle gegevens in het csv-bestand in Teams ingevuld door een laborant.
+
+Uiteindelijk worden de gegevens geanalyseerd om te zien of er een significante verandering was in de hartslag en bloeddruk van de deelnemers bij het luisteren naar het muziekstuk.
+
+En er wordt een conclusie uit de resultaten van het onderzoek gerapporteer
+
+De  vertrouwelijkheid van de gegevens van de deelnemers worden beschermd. Er worden geen namen genoemd/gevraagd.
+
+ 
+
+## Vragenlijst
+
+Wat is de leeftijd
+
+identificeer u uw zelf als een man of een vrouw
+
+Hebben ze net een fysieke activiteit gehad.
+
+Drinken ze regelmatig cafeïne/hebben ze vandaag cafeïne gehad.
+
+Hebben ze hart- en vaatproblemen.
+
+Hebben ze medicatie genomen.
+
+### Software tools
+
+```{r}
+# Data voor grafiek
+naam <- c("R Markdown", "R", "ggplot2")
+versie <- c('2.11', '4.1', '3.3.5')
+referentie <- c("M", "V", "V")
+doel <- c("Een opmaaktaal die R-code en tekst combineert voor rapporten en documentatie","Programmeertaal voor statistische analyse en visualisatie","Een krachtige R-bibliotheek voor datavisualisatie en grafieken")
+
+# Tabel maken
+df <- data.frame(Naam = naam, Versie = versie, Referentie = referentie,Doel = doel)
+
+df
+```
+Methodologieën
+```{r}
+# variablen voor Tabel
+onderzoek <-('experimenteel')
+doel <- ("Onderzoek van Oorzaak - gevolg relaties")
+toepassing <- ("Onderzoek naar directe effecten van muziek op de hartslag.")
+
+methode <- ("Deelnemers worden willekeurig gevraagd De hartslag wordt gemeten voor, en na de blootstelling aan muziek. Statistische analyse, zoals t-toetsen of ANOVA, kan worden toegepast om eventuele verschillen in hartslag tussen de groep te identificeren.")
+# Tabel maken
+df2 <- data.frame(Onderzoek = onderzoek, Doel = doel, Toepassing = toepassing,Methode = methode)
+
+df2
+```
+#Statistische formules gebruikt
+
+T-tests: Om te bepalen of er significante verschillen zijn in de hartslag/bloeddruk tussen experimentele groepen.
+
+Anova test: Om verschillen in de hartslag respons tussen meer dan twee groepen te analyseren. 
 
 # Resultaten
 
