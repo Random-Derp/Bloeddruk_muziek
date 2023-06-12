@@ -351,4 +351,4 @@ wordcountaddin:::text_stats()
 
 # Referenties
 
-Een lijst van referenties wordt hier automagisch toegevoegd.
+
