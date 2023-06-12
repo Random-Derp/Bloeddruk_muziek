@@ -150,11 +150,6 @@ Anova test: Om verschillen in de hartslag respons tussen meer dan twee groepen t
 
 # Resultaten
 
-Presenteer je resultaten in een logische volgorde. Beschrijf wat er te zien is en werk toe naar het beantwoorden van je doelstelling. Beschrijf indien mogelijke de logica van de keuze voor opeenvolgende experimenten. In elke paragraaf worden de feitelijke conclusies gegeven (bv ‘de vergelijking laat zien dat het gemiddelde van groep A significant afwijkt van het gemiddelde van groep B, met een p-waarde van … Dit komt niet overeen met de in de literatuur (REF) beschreven waardes.’)
-
-Gebruik zo veel mogelijk figuren om je informatie uit je resultaten over te brengen. Gebruik tabellen wanneer figuren minder geschikt zijn. In de tekst worden figuren en tabellen geïntroduceerd, besproken en de belangrijkste aspecten toegelicht.
-
-Voorzie je figuren van een nummer en een beschrijvende titel. Zorg voor correcte as-labels (eenheid en grootheid), legenda en bijschrift. Hier is een voorbeeldje.
 ## Figuur 1: Verschil tussen bpm verschil tussen mannen en vrouwen
 ```{r gender en bpm, echo = FALSE}
 library(ggplot2)
@@ -245,12 +240,6 @@ geom_point() +
 print(paste("p-value =",t.test(file$bpm_voor, file$bpm_na, paired = TRUE, alternative = "less"))[3])
 ```
 Figuur 5:In deze grafiek wordt de correlatie tussen bpm en het effect van muziek op de bpm getoond. Op de x-as hebben we de bpm_voor, oftewel de bpm die gemeten is voordat er muziek werd afgespeeld, en op de y-as hebben we de bpm verschil, oftewel het verschil tussen de eerste bpm meting en de tweede. De lijn geeft het gemiddelde aan van de bpm verschil en bpm_voor. Er valt op te merken dat mensen met een lagere bpm in rust een heftigere reactie vertonen dan de mensen met een hogere bpm.
-
-
-
-Geef tabellen bovenaan een titel en bijschrift die de inhoud beschrijft en onderaan voetnoten die kolomnamen of specifieke waardes verklaren.
-
-Deze sectie bevat tussen de 600-1200 woorden.
 
 
 # Discussie en Conclusies
