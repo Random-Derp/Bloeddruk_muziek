@@ -12,13 +12,13 @@ author: Mathijs Snijder
 date: '09/05/2023'
 ---
 
-## Metingen
+## Data
   * 11-05-2023 eerste metingen binnen het lokaal
   * 12-05-2023 eerste metingen buiten het lokaal
   * 15-05-2023 metingen buiten het lokaal
   * 22-05-2023 logboek aangemaakt
   * 31-05-2023 grafieken gemaakt met beschikbare data
   * 02-06-2023 metingen buiten lokaal
-  * 05-06-2023 laatste metingen buiten lokaal en logboek bijgewerkt
+  * 05-06-2023 laatste metingen buiten lokaal en logboek bijgewerkt en aan scientific paper gewerkt
   * 09-06-2023 gewerkt aan scientific paper, discussie en conclusie
-  * 12-06-2023 gewerkt aan scientific paper, discussie en conclusie afgemaakt
+  * 12-06-2023 scientific paper afgemaakt, README.Rmd aangepast, protocol aangepast, grafieken aangepast
