@@ -174,12 +174,15 @@ Figuur 1:In deze grafiek word weergegeven hoe erg de reactie van de hartslag op 
 ```{r gender en bloeddruk, echo = FALSE}
 library(ggplot2)
 library(gridExtra)
+# read file
 file <- read.csv("/homes/blkoobs/Documents/Kwartaal_4/R-Code/Bloeddruk_en_muziek/data.csv")
+# give values plot
 boven <- ggplot(data = file, mapping = aes(x = sexe, y = boven_bloeddruk_diff)) +
 geom_boxplot(fill = c("#7caab9","#e97777")) +
   theme_minimal() +
   ylab("bovendruk bloed")
 onder <- ggplot(data = file, mapping = aes(x = sexe, y = onder_bloeddruk_diff)) +
+# create plot
 geom_boxplot(fill = c("#7caab9","#e97777")) +
   theme_minimal() +
   ylab("onderdruk bloed")
@@ -192,9 +195,12 @@ Figuur 2:In deze grafiek wordt het verschil tussen de twee metingen weergegeven 
 ## Figuur 3: Verschil in bpm tussen mannen en vrouwen per tijdsvak
 ```{r tijdstip en bpm verschil, echo = FALSE}
 library(ggplot2)
+# read file
 file <- read.csv("/homes/blkoobs/Documents/Kwartaal_4/R-Code/Bloeddruk_en_muziek/data.csv")
+# give values plot
 file$tijdstip <- factor(file$tijdstip,levels = c("8-10", "10-12", "12-2", "2-4"))
 ggplot(data = file, mapping = aes(x = tijdstip, y = bpm_diff, fill = tijdstip)) +
+# create plot
 geom_boxplot() +
   guides(fill="none") +
   theme_minimal() +
@@ -206,10 +212,14 @@ Figuur 3:In deze grafiek wordt het verschil in bpm verschil op verschillende tij
 ## Figuur 4: Verschil in bpm tussen factoren zoals caffeine
 ```{r caffeine, echo = FALSE}
 library(ggplot2)
+# read file
 file <- read.csv("/homes/blkoobs/Documents/Kwartaal_4/R-Code/Bloeddruk_en_muziek/data.csv")
+# give variables other names
 caffeine <- file$vragenlijst == "caffeine"
 caffeine <- factor(caffeine,levels = c(TRUE,FALSE,NA))
+# give data plot
 ggplot(data = file, mapping = aes(x = caffeine, y = bpm_diff, fill = caffeine)) +
+# make plot with labels
 geom_boxplot() +
   scale_fill_discrete(name = "Legenda", labels = c("Met caffeine", "Andere uitzondering", "Geen uitzonderingen")) +
   theme_minimal() +
@@ -223,10 +233,11 @@ Figuur 4: In deze grafiek wordt er getoond hoe heftig de reactie op de muziek wa
 ## Figuur 5: Correlatie tussen bpm in rust en bpm verschil
 ```{r bpm voor en bpm verschil}
 library(ggplot2)
-
+# read file
 file <- read.csv("/homes/blkoobs/Documents/Kwartaal_4/R-Code/Bloeddruk_en_muziek/data.csv")
-
+# give variables plot
 ggplot(data = file, mapping = aes(x = bpm_voor, y = bpm_diff)) +
+# create plot
 geom_point() +
   theme_minimal() +
   geom_smooth(formula = y ~ x, method = "loess")
