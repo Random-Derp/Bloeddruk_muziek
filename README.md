@@ -19,9 +19,11 @@ Ook hebben we na het onderzoek verschillende testen uitgevoerd die je onder ande
 
 
 # run program
-Clone de code naar je eigen development platform en run de code in hartslag.RMD.
-Als je dat gedaan hebt verschijnt er als het goed is een hartslag.html file.
-Open deze file en launch de website om ons onderzoek met de gegevens te zien.
+Clone de code naar je eigen development platform en run de code in Scientific_paper.Rmd.
+Houd er rekening mee dat de path misschien nog niet goed is afgesteld, dus deze zal je handmatig moeten veranderen naar waar jouw mydata.csv file is.
+Als je dat gedaan hebt verschijnt er als het goed is een Scientific_paper.pdf file.
+Open deze file om ons onderzoek met de gegevens te zien.
+
 
 
 # contact
