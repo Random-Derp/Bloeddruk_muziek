@@ -11,77 +11,18 @@ date: '24/4/2023'
 
 # prelimitaries
 
-Dit onderzoek was gedaan in de maand mei-july,2023 in de hanze universiteit Groningen.
+Dit onderzoek was gedaan in de maand mei-juni,2023 in de hanze universiteit Groningen.
 
 # introduction
-Dit is de logboek van Jort 
-
-## Meetmomenten
- * 11-5 eerste meetmoment in het lokaal
- * 12-5 eerste meetmoment buiten het lokaal
- * 15-5 tweede meetmoment buiten het lokaal
-
-## Doel onderzoek
-Het doel van dit onderzoek is om de relatie tussen muziek en hartslag en bloeddruk te onderzoeken. 
-
-## data collected
-Om deze relatie te onderzoeken, zullen we de effecten van een enkel muziekstuk op de hartslag en bloeddruk van de deelnemers meten. We zullen deelnemers vragen om vijf minuten ontspannen te zitten voordat het experiment begint, zodat ze zich in een rustige en ontspannen toestand bevinden voordat we de metingen uitvoeren.
-
-Vervolgens zullen we de deelnemers laten luisteren naar één muziekstuk dat speciaal is geselecteerd om de hartslag te verhogen. We zullen hun hartslag en bloeddruk meten terwijl ze naar de muziek luisteren. Na het eerste muziekstuk zullen we opnieuw de hartslag en bloeddruk meten om te bepalen of er een significante verandering was in vergelijking met de metingen in rust. We zullen deze gegevens noteren en analyseren om te zien of er een significante relatie is tussen muziek en hartslag en bloeddruk.
-
-Het onderzoek zal worden uitgevoerd met behulp van de Omron hartslag- en bloeddrukmeter. De deelnemers zullen worden geselecteerd op basis van leeftijd en geslacht om ervoor te zorgen dat er een representatieve steekproef wordt genomen. We zullen ook een vragenlijst gebruiken om eventuele oorzaken van significante verschillen in de gegevens te ontdekken.
-
-Door de relatie tussen muziek en hartslag en bloeddruk te onderzoeken, hopen we meer inzicht te krijgen in hoe muziek het menselijk lichaam beïnvloedt. Deze informatie kan worden gebruikt om het gebruik van muziek als therapie verder te onderzoeken en te ontwikkelen.
+Dit is het logboek van Jort 
 
 ```{r}
-data <- read.csv("/homes/jrgommers/periode 3/Periode 4/hartslag2.0.csv")
+# variablen voor Tabel
+datum <-('11-05-2023','12-05-2023','15-05-2023','22-05-2023','24-05-2023','31-05-2023','5-06-2023','9-06-2023','10-06-2023','12-06-2023')
+wat_gedaan <- ("Metingen in het lokaal","Nog een paar metingen in het lokaal","Metingen buiten het lokaal","grafieken gemaakt",'diff aangemaakt in csv','Tests gemaakt van Data','inleiding artikel gemaakt','Bezig met methode','Methode afgemaakt','bezig met logboek en resultaat bespreken')
+# Tabel maken
+df <- data.frame(Datum = datum, Wat = wat)
 
-library(ggplot2)
-
-
-# Boxplot voor bpm_diff
-boxplot_bpm <- ggplot(data, aes(sexe, bpm_diff)) +
-  geom_boxplot(fill = "lightblue") +
-  labs(x = "Geslacht", y = "Verschil in hartslag (bpm)") +
-  theme_minimal()
-
-# Boxplot voor diff_bloeddruk_voor
-boxplot_bloeddruk_voor <- ggplot(data, aes(sexe,boven_bloeddruk_diff)) +
-  geom_boxplot(fill = "lightgreen") +
-  labs(x = "Geslacht", y = "Verschil in boven bloeddruk (mmHg)") +
-  theme_minimal()
-
-# Boxplot voor diff_bloeddruk_na
-boxplot_bloeddruk_na <- ggplot(data, aes(sexe, onder_bloeddruk_diff)) +
-  geom_boxplot(fill = "lightpink") +
-  labs(x = "Geslacht", y = "Verschil in onder bloeddruk (mmHg)") +
-  theme_minimal()
-
-
-print(boxplot_bpm)
-print(boxplot_bloeddruk_voor)
-print(boxplot_bloeddruk_na)
-
-```
-
-```{r}
-data <- read.csv("/homes/jrgommers/periode 3/Periode 4/hartslag2.0.csv")
-
-library(ggplot2)
-
-shapiro.test(data$bpm_diff)
-shapiro.test(data$boven_bloeddruk_diff)
-shapiro.test(data$onder_bloeddruk_diff)
-
-ttest_bpm_diff <- t.test(data$bpm_diff ~ data$sexe)
-print(ttest_bpm_diff)
-
-# T-test voor diff_bloeddruk_voor
-ttest_onder_bloeddruk_diff <- t.test(data$onder_bloeddruk_diff ~ data$sexe)
-print(ttest_onder_bloeddruk_diff)
-
-# T-test voor diff_bloeddruk_na
-ttest_boven_bloeddruk_diff <- t.test(data$boven_bloeddruk_diff ~ data$sexe)
-print(ttest_boven_bloeddruk_diff)
+df
 ```
 
