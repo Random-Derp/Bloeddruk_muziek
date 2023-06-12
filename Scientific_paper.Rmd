@@ -225,7 +225,7 @@ Presenteer je resultaten in een logische volgorde. Beschrijf wat er te zien is e
 Gebruik zo veel mogelijk figuren om je informatie uit je resultaten over te brengen. Gebruik tabellen wanneer figuren minder geschikt zijn. In de tekst worden figuren en tabellen geïntroduceerd, besproken en de belangrijkste aspecten toegelicht.
 
 Voorzie je figuren van een nummer en een beschrijvende titel. Zorg voor correcte as-labels (eenheid en grootheid), legenda en bijschrift. Hier is een voorbeeldje.
-
+## Figuur 1: Verschil tussen bpm verschil tussen mannen en vrouwen
 ```{r gender en bpm, echo = FALSE}
 library(ggplot2)
 
@@ -237,7 +237,7 @@ geom_boxplot(fill = c("#7caab9","#e97777"))
 ```
 Figuur 1:In deze grafiek word weergegeven hoe erg de reactie van de hartslag op de muziek effect had. In het blauw hebben we de mannen en in het rood hebben we de vrouwen. De x-as heeft de sexe en de y-as heeft de bpm verschil, wat staat voor het verschil in bpm wat gemeten is, dus eerste metig - tweede meting. Als het boven nul is betekent het dat er een toename is geweest in hartslag bij de tweede meting, dus na de muziek, vergeleken met de eerste meting. Als hij juist onder nul zit betekent het dat er een afname was in bpm bij de tweede meting. In de grafiek valt duidelijk te zien dat de vrouwen gemiddeld een zwaardere reactie hebben op de muziek dan de mannen. Als wij ons resultaat vergelijken met een ander vergelijkbaar onderzoek (link) kun je zien dat de reactie op de drukke muziek een stuk minder heftig is vergeleken met het andere onderzoek. Ook zie je bij de jongens dat ze kalmeren van de drukke muziek inplaats van dat de hartslag stijgt. 
 
-
+## Figuur 2: Verschil tussen onder-en-boven bloeddruk verschil tussen mannen en vrouwen
 ```{r gender en bloeddruk, echo = FALSE}
 library(ggplot2)
 library(gridExtra)
@@ -254,7 +254,7 @@ grid.arrange(boven, onder, ncol = 2)
 # vrouwen zitten vaker dicht bij het gemmiddelde, bij mannen zijn er # meer uizonderingen/uitschieters.
 ```
 Figuur 2:In deze grafiek wordt het verschil tussen de twee metingen weergegeven van onder bloeddruk verschil en boven bloeddruk verschil. De x-as is de sexe en de y-as is de bloeddruk verschil. Er valt te zien dat bij de boven bloeddruk grafiek de mannen een grotere toename hebben in bloeddruk dan de vrouwen. De mannen zijn daarintegen ook meer verspreid dan de vrouwen. Bij de onder bloeddruk blijft het bij allebei ongeveer gelijk, maar gemiddeld gaat de onder bloeddruk wel een beetje omlaag. Hier zijn de mannen ook weer meer verspreid dan de vrouwen. Er is geen vergelijkbaar onderzoek die hier mee te vergelijken valt.
-
+## Figuur 3: Verschil in bpm tussen mannen en vrouwen per tijdsvak
 ```{r tijdstip en bpm verschil, echo = FALSE}
 library(ggplot2)
 
@@ -268,7 +268,7 @@ geom_boxplot()
 # mensen reageren heftiger na tijdstip 10-12, mogelijk door recente # consumptie (lunch).
 ```
 Figuur 3:In deze grafiek wordt het verschil in bpm verschil op verschillende tijdstippen getoond. De x-as is de bpm verschil en de y-as is het tijdstip. Er valt op te merken dat de meeste toename was rond 2-4 uur 's middags en 8-10 uur 's ochtends. Rond 10-12 waren er wel een paar uitschieters, maar het gemiddelde lag rond de nul. Rond 12-2 was er weer een toename in bpm. Dit schetst een beeld van op welke tijden van de dag de reactie het heftigst is.   
-
+## Figuur 4: Verschil in bpm tussen factoren zoals caffeine
 ```{r caffeine, echo = FALSE}
 library(ggplot2)
 
@@ -282,8 +282,8 @@ geom_boxplot()
 # NA = NA bij vragenlijst
 
 ```
-Figuur 4: Op deze grafiek wordt er getoond hoe heftig de reactie op de muziek was als je caffeine hebt genomen die dag. Op de x-as 
-
+Figuur 4: In deze grafiek wordt er getoond hoe heftig de reactie op de muziek was. De betekenis van de kleuren is als volgt; rood als er caffeine is geconsumeerd die dag, blauw als er geen caffeine is genomen maar 1 van de andere factoren en grijs als er geen uitzonderingen waren. Op de x-as wordt staan de 3 variabelen die net genoemd zijn. Er valt duidelijk te zien in de grafiek dat de factoren wel degelijk een impact hebben gehad op de metingen. De grijze boxplot is ook opmerkelijk laag vergeleken de blauwe en de rode. De blauwe heeft een grotere verspreiding dan de rode, maar de rode, dus de boxplot die caffeine voorsteld, is consistent hoog. Dit laat dus zien dat caffeine een grote factor is bij dit soort onderzoeken.
+## Figuur 5: Correlatie tussen bpm in rust en bpm verschil
 ```{r tests}
 library(ggplot2)
 
@@ -296,21 +296,6 @@ geom_point() +
 ```
 Figuur 5:In deze grafiek wordt de correlatie tussen bpm en het effect van muziek op de bpm getoond. Op de x-as hebben we de bpm_voor, oftewel de bpm die gemeten is voordat er muziek werd afgespeeld, en op de y-as hebben we de bpm verschil, oftewel het verschil tussen de eerste bpm meting en de tweede. De lijn geeft het gemiddelde aan van de bpm verschil en bpm_voor. Er valt op te merken dat mensen met een lagere bpm in rust een heftigere reactie vertonen dan de mensen met een hogere bpm.
 
-# TESTS
-
-```{r visualize, echo = FALSE}
-library(ggplot2)
-
-file <- read.csv("/homes/blkoobs/Documents/Kwartaal_4/R-Code/Bloeddruk_en_muziek/data.csv")
-
-anova <- aov(bpm_diff ~ sexe, data = file)
-summary(anova)
-
-voor <- file$boven_bloeddruk_voor
-na <- file$boven_bloeddruk_na
-
-t.test(voor, na, data = file, paired = TRUE)
-```
 
 
 Geef tabellen bovenaan een titel en bijschrift die de inhoud beschrijft en onderaan voetnoten die kolomnamen of specifieke waardes verklaren.
