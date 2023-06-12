@@ -339,3 +339,6 @@ https://www.nature.com/articles/s41598-021-03374-w
 
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5744879/
 
+Field, Zoë, Jeremy Miles, and Andy Field. "Discovering statistics using R." Discovering Statistics Using R (2012): 1-992. 
+https://www.torrossa.com/en/resources/an/4913501 
+
