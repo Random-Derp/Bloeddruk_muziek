@@ -101,17 +101,6 @@ Dit onderzoek is gedaan door een groep mensen van de Hanze dat een groep mensen 
 Met dit onderzoek kunnen een aantal hypotheses beantwoord worden. Verhoogd ruige muziek de hartslag, Heeft ruige muziek geen effect op de hartslag of verlaagd ruige muziek juist de hartslag. Met dit onderzoek kunnen deze vragen door middel van grafieken en cijfers beantwoord worden. 
 
 
-uni amsterdam
-
-https://www.uva.nl/shared-content/faculteiten/nl/faculteit-der-maatschappij-en-gedragswetenschappen/nieuws/2020/12/muziek-en-stress.html?cb
-
-symptomen vinden 
-
-https://www.nature.com/articles/s41598-021-03374-w
-
-muziek en PTSD
-
-https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5744879/
 
 # Materialen en Methoden
 
@@ -343,4 +332,10 @@ wordcountaddin:::text_stats()
 
 # Referenties
 https://www.cureus.com/articles/92593-the-effect-of-classical-music-on-heart-rate-blood-pressure-and-mood#!/#results
+
+https://www.uva.nl/shared-content/faculteiten/nl/faculteit-der-maatschappij-en-gedragswetenschappen/nieuws/2020/12/muziek-en-stress.html?cb 
+
+https://www.nature.com/articles/s41598-021-03374-w
+
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5744879/
 
