@@ -330,16 +330,8 @@ Deze sectie bevat tussen de 400-800 woorden.
 
 # Online bijlagen
 
-Vaak zijn online bijlagen vele malen groter dan het eigenlijke artikel. Wees nooit bang om te veel aan bijlagen aan te bieden. Je kan hierbij denken aan
+https://github.com/Random-Derp/Bloeddruk_muziek
 
-- de ruwe data
-- de code voor dataverwerking 
-- de code voor analyse
-- aanvullende figuren en tabellen
-
-Natuurlijk is een git(hub) repo daar de beste plek voor!
-Zorg ervoor de je repo logisch is ingericht met goede Readme document(en). 
-Ook de code zelf is waar nodig natuurlijk goed gedocumenteerd.
 
 ## Wordcount
 
