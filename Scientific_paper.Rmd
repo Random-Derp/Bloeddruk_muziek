@@ -237,7 +237,7 @@ ggplot(data = airquality, mapping = aes(x = Solar.R, y = Ozone)) +
     theme(legend.title = element_blank())
 ```
 
-```{r visualize, echo = FALSE}
+```{r gender en bpm, echo = FALSE}
 library(ggplot2)
 
 file <- read.csv("/homes/blkoobs/Documents/Kwartaal_4/R-Code/Bloeddruk_en_muziek/data.csv")
@@ -247,7 +247,7 @@ geom_boxplot(fill = c("#7caab9","#e97777"))
 # simpele grafiek over hoe sterk de sexe reageren.
 ```
 
-```{r visualize, echo = FALSE}
+```{r gender en bloeddruk, echo = FALSE}
 library(ggplot2)
 library(gridExtra)
 
@@ -263,7 +263,7 @@ grid.arrange(boven, onder, ncol = 2)
 # vrouwen zitten vaker dicht bij het gemmiddelde, bij mannen zijn er # meer uizonderingen/uitschieters.
 ```
 
-```{r visualize, echo = FALSE}
+```{r tijdstip en bpm verschil, echo = FALSE}
 library(ggplot2)
 
 file <- read.csv("/homes/blkoobs/Documents/Kwartaal_4/R-Code/Bloeddruk_en_muziek/data.csv")
@@ -274,7 +274,7 @@ geom_boxplot()
 # mensen reageren heftiger na tijdstip 10-12, mogelijk door recente # consumptie (lunch).
 ```
 
-```{r visualize, echo = FALSE}
+```{r caffeine, echo = FALSE}
 library(ggplot2)
 
 file <- read.csv("/homes/blkoobs/Documents/Kwartaal_4/R-Code/Bloeddruk_en_muziek/data.csv")
@@ -282,16 +282,13 @@ caffeine <- file$vragenlijst == "caffeine"
 ggplot(data = file, mapping = aes(x = caffeine, y = bpm_diff)) +
 geom_boxplot()
 
-file %>%
-  mean(filter(vragenlijst == "caffeine"), na.rm = T)
-
 # False = gesport / gesport en caffeine / hartproblemen
 # True = caffeine
 # NA = NA bij vragenlijst
 
 ```
 
-```{r}
+```{r tests}
 library(ggplot2)
 
 file <- read.csv("/homes/blkoobs/Documents/Kwartaal_4/R-Code/Bloeddruk_en_muziek/data.csv")
