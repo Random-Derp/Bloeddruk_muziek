@@ -173,17 +173,17 @@ De  vertrouwelijkheid van de gegevens van de deelnemers worden beschermd. Er wor
 
 ## Vragenlijst
 
-Wat is de leeftijd
+Wat is je leeftijd
 
-identificeer u uw zelf als een man of een vrouw
+Ben je een man of een vrouw
 
-Hebben ze net een fysieke activiteit gehad.
+Heb je fysieke activiteit gehad in de laatste 1,5 uur
 
-Drinken ze regelmatig cafeïne/hebben ze vandaag cafeïne gehad.
+Heb je vandaag caffeïne gehad
 
-Hebben ze hart- en vaatproblemen.
+Heb je hart- en vaatproblemen
 
-Hebben ze medicatie genomen.
+Heb je medicatie genomen
 
 ### Software tools
 
