@@ -199,7 +199,7 @@ df <- data.frame(Naam = naam, Versie = versie, Referentie = referentie,Doel = do
 
 df
 ```
-Methodologieën
+### Methodologieën
 ```{r}
 # variablen voor Tabel
 onderzoek <-('experimenteel')
