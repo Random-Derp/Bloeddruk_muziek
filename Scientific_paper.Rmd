@@ -8,16 +8,16 @@ author: |
 lang: nl # dit zorgt er voor dat "abstract" "samenvatting" gaat heten
 
 abstract: |
-In dit onderzoek is gekeken naar het effect van drukke muziek op de hartslag en bloeddruk. Dit is een interessant onderwerp omdat er dan gebruik gemaakt kan worden bij de psychologie als onderdeel van muziektherapie en de effecten die dat kunnen hebben. De executie van het onderzoek is als volgt; Er zijn mensen in de Hanze Hogeschool gevraagd voor dit onderzoek, deze kregen een bloeddrukmeter en een pulse oximeter en werden twee keer gemeten, de eerste keer zonder muziek en de tweede keer met muziek. Uit de resultaten blijkt dat er kleine verschillen zijn in de metingen van de hartslag. Hiermee concluderen wij dat mensen minder gevoelig zijn voor drukke muziek vergeleken met oudere onderzoeken. De boven-bloeddruk verschil is insignificant blijkt uit de testen en bij de onder-bloeddruk is wel een verschil. 
+In dit onderzoek is gekeken naar het effect van drukke muziek op de hartslag en bloeddruk. Dit is een interessant onderwerp omdat er dan gebruik gemaakt kan worden bij de psychologie als onderdeel van muziektherapie en de effecten die dat kunnen hebben. De executie van het onderzoek is als volgt; Er zijn mensen in de Hanze Hogeschool gevraagd voor dit onderzoek, deze kregen een bloeddrukmeter en een pulse oximeter en werden twee keer gemeten, de eerste keer zonder muziek en de tweede keer met muziek. Uit de resultaten blijkt dat er kleine verschillen zijn in de metingen van de hartslag. Hiermee concluderen wij dat mensen minder gevoelig zijn voor drukke muziek vergeleken met oudere onderzoeken. De boven-bloeddruk verschil is insignificant blijkt uit de testen en bij de onder-bloeddruk is wel een verschil.
 bibliography: simple_template.bib # naam van je .bib file. Deze moet hetzelfde zijn als je Rmd bestandsnaam
 
 output:
   bookdown::pdf_document2:
-    keep_tex: false    # set this to true if you want to investigate the generated tex
-    toc: false         # table of contents
-    fig_caption: true  # includes figure captions with numbering in output
-    includes:  
-        in_header: include_tex_header.tex #will include rules for linespacing and figure floating
+	keep_tex: false	# set this to true if you want to investigate the generated tex
+	toc: false     	# table of contents
+	fig_caption: true  # includes figure captions with numbering in output
+	includes:  
+    	in_header: include_tex_header.tex #will include rules for linespacing and figure floating
 
 ---
 
@@ -26,7 +26,7 @@ output:
 
 ```{r setup, message=FALSE, warning=FALSE, include=FALSE}
 knitr::opts_chunk$set(out.width = '100%', dpi=300) # configuratie voor figuur grootte en resolutie
-knitr::opts_chunk$set(echo = FALSE) # Deze regel zorgt ervoor GEEN ENKELE chunk getoond wordt! 
+knitr::opts_chunk$set(echo = FALSE) # Deze regel zorgt ervoor GEEN ENKELE chunk getoond wordt!
 # Laad alle gebruikte bibliotheken hier
 library(ggplot2)
 ```
@@ -37,10 +37,10 @@ Al jaren luisteren mensen naar muziek als ze aan het sporten zijn, auto rijden o
 
 Het geeft ons motivatie, het brengt mensen tot rust en kan zelfs mensen laten huilen.
 
-Ook is de populariteit van ‘drukke’ muziek omhoog gegaan, zowel bij sport als in clubs en festivals. Dit onderzoek specialiseert zich in de invloed van drukke muziek op de hartslag op de universiteit van de Hanze. 
+Ook is de populariteit van ‘drukke’ muziek omhoog gegaan, zowel bij sport als in clubs en festivals. Dit onderzoek specialiseert zich in de invloed van drukke muziek op de hartslag op de universiteit van de Hanze.
 
 
-Door het onderzoek naar de effecten van muziek op de hartslag kunnen mensen een beter beeld krijgen over de impact van muziek op het cardiovasculair systeem, En de effecten op de gezondheid van mensen door de muziek. Dit is van belang bij de gezondheidszorg waar muziek in gezet kan worden om de hartslag te verhogen of te verlagen om bepaalde symptomen van ziekte aan te tonen zoals PTSD of psychische problemen. Door te kijken of de patiënt zijn hartslag omhoog gaat door de muziek kunnen misschien symptomen van deze aandoeningen tevoorschijn komen. 
+Door het onderzoek naar de effecten van muziek op de hartslag kunnen mensen een beter beeld krijgen over de impact van muziek op het cardiovasculair systeem, En de effecten op de gezondheid van mensen door de muziek. Dit is van belang bij de gezondheidszorg waar muziek in gezet kan worden om de hartslag te verhogen of te verlagen om bepaalde symptomen van ziekte aan te tonen zoals PTSD of psychische problemen. Door te kijken of de patiënt zijn hartslag omhoog gaat door de muziek kunnen misschien symptomen van deze aandoeningen tevoorschijn komen.
 
 Ook helpt dit onderzoek bij het psychologische welzijn, door dit onderzoek kunnen mensen een beter idee krijgen van de impact van muziek op emoties van mensen en hierop muziektherapieen aanpassen en weer verbeteren blijkt uit en onderzoek van de universiteit van Amsterdam.
 
@@ -53,9 +53,9 @@ Onderzoeken naar de effecten van muziektempo op de hartslag.
 
 En hoe muziek varieert per persoon. Maar wat de andere onderzoeken missen maar wat dit onderzoek heeft is de actualiteit. Andere onderzoeken zijn gedaan op de oudere generatie, maar mensen luisteren steeds meer muziek. Uit een onderzoek van het IFPI , de wereldwijde belangenbehartiger van de muziekindustrie. Blijkt dat er in 2022 meer dan 10% meer muziek is geluisterd door mensen. Het is van 18.4 uur per week in 2021 naar 20.1 uur per week gegaan in 2022. Wat dit te maken heeft met de actualiteit is dat de hoeveelheid muziek kan zorgen voor een afname in de effecten van muziek in het cardiovasculair systeem. Waardoor mensen als ware een immuniteit opbouwen aan de reactie van het lichaam op de mens. Mede door deze reden is dit onderzoek van belang om de effecten te zien en te vergelijken met andere onderzoeken.
 
-Dit onderzoek is gedaan door een groep mensen van de Hanze dat een groep mensen op de Hanze heeft gevraagd om mee te doen aan dit onderzoek. Eerst werd hun hartslag gemeten en daarna werd de  muziek gedraaid en tussendoor werd de hartslag nog een keer gemeten. Uiteindelijk werden alle data samengebracht en onderzocht. 
+Dit onderzoek is gedaan door een groep mensen van de Hanze dat een groep mensen op de Hanze heeft gevraagd om mee te doen aan dit onderzoek. Eerst werd hun hartslag gemeten en daarna werd de  muziek gedraaid en tussendoor werd de hartslag nog een keer gemeten. Uiteindelijk werden alle data samengebracht en onderzocht.
 
-Met dit onderzoek kunnen een aantal hypotheses beantwoord worden. Verhoogd ruige muziek de hartslag, Heeft ruige muziek geen effect op de hartslag of verlaagd ruige muziek juist de hartslag. Met dit onderzoek kunnen deze vragen door middel van grafieken en cijfers beantwoord worden. 
+Met dit onderzoek kunnen een aantal hypotheses beantwoord worden. Verhoogd ruige muziek de hartslag, Heeft ruige muziek geen effect op de hartslag of verlaagd ruige muziek juist de hartslag. Met dit onderzoek kunnen deze vragen door middel van grafieken en cijfers beantwoord worden.
 
 
 
@@ -132,7 +132,7 @@ df
 ```
 ### Methodologieën
 ```{r}
-# variablen voor Tabel
+# variabelen voor Tabel
 onderzoek <-('experimenteel')
 doel <- ("Onderzoek van Oorzaak - gevolg relaties")
 toepassing <- ("Onderzoek naar directe effecten van muziek op de hartslag.")
@@ -147,7 +147,7 @@ df2
 
 T-tests: Om te bepalen of er significante verschillen zijn in de hartslag/bloeddruk tussen experimentele groepen.
 
-Anova test: Om verschillen in de hartslag respons tussen meer dan twee groepen te analyseren. 
+Anova test: Om verschillen in de hartslag respons tussen meer dan twee groepen te analyseren.
 
 # Resultaten
 
@@ -161,12 +161,12 @@ ggplot(data = file, mapping = aes(x = sexe, y = bpm_diff)) +
 geom_boxplot(fill = c("#7caab9","#e97777")) +
   theme_minimal() +
   ylab("bpm verschil")
-  
+ 
  print(paste("p-value =",t.test(bpm_diff ~ sexe, data = file)$p.value))
 ```
-Figuur 1:In deze grafiek word weergegeven hoe erg de reactie van de hartslag op de muziek effect had. In het blauw hebben we de mannen en in het rood hebben we de vrouwen. De x-as heeft de sexe en de y-as heeft de bpm verschil, wat staat voor het verschil in bpm wat gemeten is, dus eerste metig - tweede meting. Als het boven nul is betekent het dat er een toename is geweest in hartslag bij de tweede meting, dus na de muziek, vergeleken met de eerste meting. Als hij juist onder nul zit betekent het dat er een afname was in bpm bij de tweede meting. In de grafiek valt duidelijk te zien dat de vrouwen gemiddeld een zwaardere reactie hebben op de muziek dan de mannen. Als wij ons resultaat vergelijken met een ander vergelijkbaar onderzoek (link) kun je zien dat de reactie op de drukke muziek een stuk minder heftig is vergeleken met het andere onderzoek. Ook zie je bij de jongens dat ze kalmeren van de drukke muziek inplaats van dat de hartslag stijgt.
+Figuur 1:In deze grafiek wordt weergegeven hoe erg de reactie van de hartslag op de muziek effect had. In het blauw hebben we de mannen en in het rood hebben we de vrouwen. De x-as heeft de sexe en de y-as heeft de bpm verschil, wat staat voor het verschil in bpm wat gemeten is, dus eerste meting - tweede meting. Als het boven nul is betekent het dat er een toename is geweest in hartslag bij de tweede meting, dus na de muziek, vergeleken met de eerste meting. Als hij juist onder nul zit betekent het dat er een afname was in bpm bij de tweede meting. In de grafiek valt duidelijk te zien dat de vrouwen gemiddeld een zwaardere reactie hebben op de muziek dan de mannen. Als wij ons resultaat vergelijken met een ander vergelijkbaar onderzoek (link) kun je zien dat de reactie op de drukke muziek een stuk minder heftig is vergeleken met het andere onderzoek. Ook zie je bij de jongens dat ze kalmeren van de drukke muziek in plaats van dat de hartslag stijgt.
 
-Uitslag test 1: De p-value is veel hoger dan 0,05. Deze waarde stelt de nulhypothese vast, want dit bevestigd dat er geen significante correlatie is tussen bpm verschil en sexe.
+Uitslag test 1: De p-waarde is veel hoger dan 0,05. Deze waarde stelt de nulhypothese vast, want dit bevestigt dat er geen significante correlatie is tussen bpm verschil en sexe.
 
 
 ## Figuur 2: Verschil tussen onder-en-boven bloeddruk verschil tussen mannen en vrouwen
@@ -190,10 +190,10 @@ grid.arrange(boven, onder, ncol = 2)
 print(paste("p-value bovendruk =",t.test(boven_bloeddruk_diff ~ sexe, data = file)$p.value))
 print(paste("p-value onderdruk =",t.test(onder_bloeddruk_diff ~ sexe, data = file)$p.value))
 ```
-Figuur 2:In deze grafiek wordt het verschil tussen de twee metingen weergegeven van onder bloeddruk verschil en boven bloeddruk verschil. De x-as is de sexe en de y-as is de bloeddruk verschil. Er valt te zien dat bij de boven bloeddruk grafiek de mannen een grotere toename hebben in bloeddruk dan de vrouwen. De mannen zijn daarintegen ook meer verspreid dan de vrouwen. Bij de onder bloeddruk blijft het bij allebei ongeveer gelijk, maar gemiddeld gaat de onder bloeddruk wel een beetje omlaag. Hier zijn de mannen ook weer meer verspreid dan de vrouwen. Er is geen vergelijkbaar onderzoek die hier mee te vergelijken valt.
+Figuur 2:In deze grafiek wordt het verschil tussen de twee metingen weergegeven van onder bloeddruk verschil en boven bloeddruk verschil. De x-as is de sexe en de y-as is de bloeddruk verschil. Er valt te zien dat bij de boven-bloeddruk grafiek de mannen een grotere toename hebben in bloeddruk dan de vrouwen. De mannen zijn daarentegen ook meer verspreid dan de vrouwen. Bij de onder bloeddruk blijft het bij allebei ongeveer gelijk, maar gemiddeld gaat de onder bloeddruk wel een beetje omlaag. Hier zijn de mannen ook weer meer verspreid dan de vrouwen. Er is geen vergelijkbaar onderzoek dat hier mee te vergelijken valt.
 
-Uitslag test 2 bovendruk: De p-value uit deze test is veel kleiner dan 0,05, en is dus significant. 
-Uitslag test 2 onderdruk: De p-value uit deze test is veel groter dan 0,05, en is dus niet significant.
+Uitslag test 2 bovendruk: De p-waarde uit deze test is veel kleiner dan 0,05, en is dus significant.
+Uitslag test 2 onderdruk: De p-waarde uit deze test is veel groter dan 0,05, en is dus niet significant.
 
 
 
@@ -213,7 +213,7 @@ geom_boxplot() +
 
 print(paste("p-value =",summary(aov(bpm_diff ~ tijdstip, data = file))[[1]][["Pr(>F)"]][1])) # extracts p-value
 ```
-Figuur 3:In deze grafiek wordt het verschil in bpm verschil op verschillende tijdstippen getoond. De x-as is de bpm verschil en de y-as is het tijdstip. Er valt op te merken dat de meeste toename was rond 2-4 uur 's middags en 8-10 uur 's ochtends. Rond 10-12 waren er wel een paar uitschieters, maar het gemiddelde lag rond de nul. Rond 12-2 was er weer een toename in bpm. Dit schetst een beeld van op welke tijden van de dag de reactie het heftigst is.
+Figuur 3:In deze grafiek wordt het verschil in bpm verschil op verschillende tijdstippen getoond. De x-as is het bpm verschil en de y-as is het tijdstip. Er valt op te merken dat de meeste toename was rond 2-4 uur 's middags en 8-10 uur 's ochtends. Rond 10-12 waren er wel een paar uitschieters, maar het gemiddelde lag rond de nul. Rond 12-2 was er weer een toename in bpm. Dit schetst een beeld van op welke tijden van de dag de reactie het heftigst is.
 
 Uitslag test 3: De p-waarde is hier ook hoger dan 0.05 wat zegt dat tijd geen correlatie heeft met bpm verschil.
 
@@ -234,12 +234,12 @@ geom_boxplot() +
   scale_fill_discrete(name = "Legenda", labels = c("Met caffeine", "Andere uitzondering", "Geen uitzonderingen")) +
   theme_minimal() +
   ylab("bpm verschil") +
-    theme(axis.text.x=element_blank(),
-        axis.ticks.x=element_blank())
+	theme(axis.text.x=element_blank(),
+    	axis.ticks.x=element_blank())
 
 print(paste("p-value =",t.test(bpm_diff ~ caffeine, data = file)$p.value))
 ```
-Figuur 4: In deze grafiek wordt er getoond hoe heftig de reactie op de muziek was. De betekenis van de kleuren is als volgt; rood als er caffeine is geconsumeerd die dag, blauw als er geen caffeine is genomen maar 1 van de andere factoren en grijs als er geen uitzonderingen waren. Op de x-as wordt staan de 3 variabelen die net genoemd zijn. Er valt duidelijk te zien in de grafiek dat de factoren wel degelijk een impact hebben gehad op de metingen. De grijze boxplot is ook opmerkelijk laag vergeleken de blauwe en de rode. De blauwe heeft een grotere verspreiding dan de rode, maar de rode, dus de boxplot die caffeine voorsteld, is consistent hoog. Dit laat dus zien dat caffeine een grote factor is bij dit soort onderzoeken.
+Figuur 4: In deze grafiek wordt er getoond hoe heftig de reactie op de muziek was. De betekenis van de kleuren is als volgt; rood als er cafeïne is geconsumeerd die dag, blauw als er geen cafeïne is genomen maar 1 van de andere factoren en grijs als er geen uitzonderingen waren. Op de x-as wordt staan de 3 variabelen die net genoemd zijn. Er valt duidelijk te zien in de grafiek dat de factoren wel degelijk een impact hebben gehad op de metingen. De grijze boxplot is ook opmerkelijk laag vergeleken de blauwe en de rode. De blauwe heeft een grotere verspreiding dan de rode, maar de rode, dus de boxplot die cafeïne voorsteld, is consistent hoog. Dit laat dus zien dat cafeïne een grote factor is bij dit soort onderzoeken.
 
 Uitslag test 4: Ook uit deze test is het niet significant.
 
@@ -257,7 +257,7 @@ geom_point() +
  
 print(paste("p-value =",t.test(file$bpm_voor, file$bpm_na, paired = TRUE, alternative = "less"))[3])
 ```
-Figuur 5:In deze grafiek wordt de correlatie tussen bpm en het effect van muziek op de bpm getoond. Op de x-as hebben we de bpm_voor, oftewel de bpm die gemeten is voordat er muziek werd afgespeeld, en op de y-as hebben we de bpm verschil, oftewel het verschil tussen de eerste bpm meting en de tweede. De lijn geeft het gemiddelde aan van de bpm verschil en bpm_voor. Er valt op te merken dat mensen met een lagere bpm in rust een heftigere reactie vertonen dan de mensen met een hogere bpm.
+Figuur 5:In deze grafiek wordt de correlatie tussen bpm en het effect van muziek op de bpm getoond. Op de x-as hebben we de bpm voor, oftewel de bpm die gemeten is voordat er muziek werd afgespeeld, en op de y-as hebben we het bpm verschil, oftewel het verschil tussen de eerste bpm meting en de tweede. De lijn geeft het gemiddelde aan van de bpm verschil en bpm voor. Er valt op te merken dat mensen met een lagere bpm in rust een heftigere reactie vertonen dan de mensen met een hogere bpm.
 
 Uitslag test 5: Deze test is wel significant bpm voor en bpm verschil hebben een relatie.
 
@@ -265,12 +265,12 @@ Uitslag test 5: Deze test is wel significant bpm voor en bpm verschil hebben een
 
 # Discussie en Conclusies
 
-Uit de data blijkt dat muziek wel degelijk een invloed heeft op de hartslag en bloeddruk, gemiddeld gezien. Bij de hartslag valt dit makkelijk te zien aan de verhoogde bpm, bij de bloedddruk is de bovendruk hoger is en de onderdruk lager. Het feit dat de onderdruk lager is tijdens het beluisteren van de muziek is niet apart, aangezien dit een natuurlijke reactie is van het lichaam tijdens het ervaren van stress. Het praktische nut van dit onderzoek kan zijn dat er nu geconstateerd is dat drukke muziek vaak zorgt voor stress, en dus kan het gebruikt worden om stress te veroorzaken. Dit kan nuttig zijn voor onderzoekers die mensen die onder stress staan willen onderzoeken.
+Uit de data blijkt dat muziek wel degelijk een invloed heeft op de hartslag en bloeddruk, gemiddeld gezien. Bij de hartslag valt dit makkelijk te zien aan de verhoogde bpm, bij de bloeddruk is de bovendruk hoger en de onderdruk lager. Het feit dat de onderdruk lager is tijdens het beluisteren van de muziek is niet apart, aangezien dit een natuurlijke reactie is van het lichaam tijdens het ervaren van stress. Het praktische nut van dit onderzoek kan zijn dat er nu geconstateerd is dat drukke muziek vaak zorgt voor stress, en dus kan het gebruikt worden om stress te veroorzaken. Dit kan nuttig zijn voor onderzoekers die mensen die onder stress staan willen onderzoeken.
 Uit de 'Reliability Test' bleek dat er op zijn minst 43 individuele personen onderzocht moesten worden. Deze uitslag is aangehouden en er zijn daadwerkelijk 43 personen getest. Volgens de Reliability Test zijn deze data dus betrouwbaar.
 
-Vergeleken met een soortgelijk onderzoek: 10.7759/cureus.27348, zijn er verschillen. Dit onderzoek kwam uit op een grotere toename bij de bpm en bovenbloeddruk, maar waar dit onderzoek bij onderbloeddruk een afname constateerde, had het andere onderzoek juist een stijging waargenomen. 
+Vergeleken met een soortgelijk onderzoek: 10.7759/cureus.27348, zijn er verschillen. Dit onderzoek kwam uit op een grotere toename bij de bpm en boven bloeddruk, maar waar dit onderzoek bij onder bloeddruk een afname constateerde, had het andere onderzoek juist een stijging waargenomen.
 
-De uitkomst kwam overeen met onze verwachtingen. Het enige probleem waar we tegen aan liepen was het feit dat we de mensen niet echt veelrust gaven, en dat sommige mensen ook gestresst aan het onderzoek deelnamen. Dit had een relatief grote impact op de betrouwbaarheid van de data, omdat dit het verschil tussen de twee metingen verstoord heeft. Het bleek dat sommige mensen de muziek die wij hadden uitgekozen fijn vonden om naar te luisteren. Dit zorgt natuurlijk voor een andere reactie dan bij mensen die de muziek niet leuk vinden. Sommige mensen werden ook juist rustiger van de muziek die wij gebruikten. Dit is iets wat wij niet hadden voorzien. Naast de weinige rust die de mensen kregen zorgde de hartslagmeter ook voor enige stress, aangezien deze redelijk hard om je arm samentrekt om een meting te krijgen. Dit kan voor schrik zorgen bij mensen die dit niet hadden verwacht. De door de hartslagmeter veroorzaakte stress was hoogstwaarschijnlijk ook hoger tijdens de eerste meting dan bij de tweede, omdat de persoon die gemeten wordt dan gewend is aan de knijpkracht van het apparaat. Wat wij beter kunnen doen is dat we de volgende keer eerst een meting doen die nergens voor dent, behavlve dat de persoon die gemeten wordt dan niet verrast wordt door de bloeddrukmeter.
+De uitkomst kwam overeen met onze verwachtingen. Het enige probleem waar we tegenaan liepen was het feit dat we de mensen niet echt veel rust gaven, en dat sommige mensen ook gestresst aan het onderzoek deelnamen. Dit had een relatief grote impact op de betrouwbaarheid van de data, omdat dit het verschil tussen de twee metingen verstoord heeft. Het bleek dat sommige mensen de muziek die wij hadden uitgekozen fijn vonden om naar te luisteren. Dit zorgt natuurlijk voor een andere reactie dan bij mensen die de muziek niet leuk vinden. Sommige mensen werden ook juist rustiger van de muziek die wij gebruikten. Dit is iets wat wij niet hadden voorzien. Naast de weinige rust die de mensen kregen zorgde de hartslagmeter ook voor enige stress, aangezien deze redelijk hard om je arm samentrekt om een meting te krijgen. Dit kan voor schrik zorgen bij mensen die dit niet hadden verwacht. De door de hartslagmeter veroorzaakte stress was hoogstwaarschijnlijk ook hoger tijdens de eerste meting dan bij de tweede, omdat de persoon die gemeten wordt dan gewend is aan de knijpkracht van het apparaat. Wat wij beter kunnen doen is dat we de volgende keer eerst een meting doen die nergens voor dient, behalve dat de persoon die gemeten wordt dan niet verrast wordt door de bloeddrukmeter.
 
 
 # Online bijlagen
@@ -295,6 +295,8 @@ https://www.nature.com/articles/s41598-021-03374-w
 Landis-Shack, Nora, Adrienne J. Heinz, and Marcel O. Bonn-Miller. "Music therapy for posttraumatic stress in adults: A theoretical review." Psychomusicology: Music, Mind, and Brain 27.4 (2017): 334.
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5744879/
 
-Field, Zoë, Jeremy Miles, and Andy Field. "Discovering statistics using R." Discovering Statistics Using R (2012): 1-992. 
-https://www.torrossa.com/en/resources/an/4913501 
+Field, Zoë, Jeremy Miles, and Andy Field. "Discovering statistics using R." Discovering Statistics Using R (2012): 1-992.
+https://www.torrossa.com/en/resources/an/4913501
+
+
 
