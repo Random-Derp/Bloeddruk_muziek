@@ -206,7 +206,7 @@ geom_boxplot() +
   theme_minimal() +
   ylab("bpm verschil")
 
-summary(aov(bpm_diff ~ tijdstip, data = file))[[1]][["Pr(>F)"]][1] # extracts p-value
+print(paste("p-value =",summary(aov(bpm_diff ~ tijdstip, data = file))[[1]][["Pr(>F)"]][1])) # extracts p-value
 ```
 Figuur 3:In deze grafiek wordt het verschil in bpm verschil op verschillende tijdstippen getoond. De x-as is de bpm verschil en de y-as is het tijdstip. Er valt op te merken dat de meeste toename was rond 2-4 uur 's middags en 8-10 uur 's ochtends. Rond 10-12 waren er wel een paar uitschieters, maar het gemiddelde lag rond de nul. Rond 12-2 was er weer een toename in bpm. Dit schetst een beeld van op welke tijden van de dag de reactie het heftigst is.   
 ## Figuur 4: Verschil in bpm tussen factoren zoals caffeine
