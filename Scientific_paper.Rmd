@@ -189,10 +189,10 @@ Heb je medicatie genomen
 
 ```{r}
 # Data voor grafiek
-naam <- c("R Markdown", "R", "ggplot2")
-versie <- c('2.11', '4.1', '3.3.5')
-referentie <- c("M", "V", "V")
-doel <- c("Een opmaaktaal die R-code en tekst combineert voor rapporten en documentatie","Programmeertaal voor statistische analyse en visualisatie","Een krachtige R-bibliotheek voor datavisualisatie en grafieken")
+naam <- c("R Markdown", "R", "ggplot2","gridExtra")
+versie <- c('2.11', '4.1', '3.3.5','2.3')
+referentie <- c("rmarkdown.rstudio.com", "www.r-project.org", "ggplot2.tidyverse.org","https://cran.r-project.org/web/packages/gridExtra/index.html")
+doel <- c("Een opmaaktaal die R-code en tekst combineert voor rapporten en documentatie","Programmeertaal voor statistische analyse en visualisatie","Een krachtige R-bibliotheek voor datavisualisatie en grafieken","Helpt bij de opmaak van grafieken")
 
 # Tabel maken
 df <- data.frame(Naam = naam, Versie = versie, Referentie = referentie,Doel = doel)
