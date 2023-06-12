@@ -8,7 +8,6 @@ author: |
 lang: nl # dit zorgt er voor dat "abstract" "samenvatting" gaat heten
 
 abstract: |
-  Geef hier je samenvatting in maximaal 150 woorden. Het is een samenvatting van het hele artikel; niet alleen de resultaten! Begin met het belang van dit onderzoek, dan hoe het onderzoek is aangepakt en de belangrijkste resultaten en eindig met de implicaties ervan voor de wetenschap/de maatschappij. Neem nooit figuren of tabellen op in de samenvatting.
 In dit onderzoek is gekeken naar het effect van drukke muziek op de hartslag en bloeddruk. Dit is een interessant onderwerp omdat er dan gebruik gemaakt kan worden bij de psychologie als onderdeel van muziektherapie en de effecten die dat kunnen hebben. De executie van het onderzoek is als volgt; Er zijn mensen in de Hanze Hogeschool gevraagd voor dit onderzoek, deze kregen een bloeddrukmeter en een pulse oximeter en werden twee keer gemeten, de eerste keer zonder muziek en de tweede keer met muziek. Uit de resultaten blijkt dat er kleine verschillen zijn in de metingen van de hartslag. Hiermee concluderen wij dat mensen minder gevoelig zijn voor drukke muziek vergeleken met oudere onderzoeken. De boven-bloeddruk verschil is insignificant blijkt uit de testen en bij de onder-bloeddruk is wel een verschil 
 bibliography: simple_template.bib # naam van je .bib file. Deze moet hetzelfde zijn als je Rmd bestandsnaam
 
@@ -269,7 +268,6 @@ https://github.com/Random-Derp/Bloeddruk_muziek
 
 ## Wordcount
 
-Voeg aan het eind een woord-telling in:
 
 ```{r wordcount, message=FALSE}
 wordcountaddin:::text_stats()
