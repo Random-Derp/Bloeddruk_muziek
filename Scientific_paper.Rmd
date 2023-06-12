@@ -228,7 +228,8 @@ file <- read.csv("/homes/blkoobs/Documents/Kwartaal_4/R-Code/Bloeddruk_en_muziek
 
 ggplot(data = file, mapping = aes(x = bpm_voor, y = bpm_diff)) +
 geom_point() +
-  geom_smooth()
+  theme_minimal() +
+  geom_smooth(formula = y ~ x, method = "loess")
  
 print(paste("p-value =",t.test(file$bpm_voor, file$bpm_na, paired = TRUE, alternative = "less"))[3])
 ```
