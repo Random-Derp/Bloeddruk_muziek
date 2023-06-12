@@ -76,7 +76,42 @@ Vervolgens bespreek je de achtergronden van je onderzoek. Wat is er al eerder on
 Je eindigt de introductie met de doelstelling(en) van jouw onderzoek, en hoe je deze doelstellingen denkt te gaan verwezenlijken; de aanpak. Geef hier ook eventuele hypothesen. 
 
 De introductie bevat tussen de 400-800 woorden.
+Al jaren luisteren mensen naar muziek als ze aan het sporten zijn, auto rijden of aan het werk zijn. Tegenwoordig speelt muziek daardoor ook een belangrijk onderdeel voor mensen.
 
+Het geeft ons motivatie, het brengt mensen tot rust en kan zelfs mensen laten huilen.
+
+Ook is de populariteit van ‘drukke’ muziek omhoog gegaan, zowel bij sport als in clubs en festivals. Dit onderzoek specialiseert zich in de invloed van drukke muziek op de hartslag op de universiteit van de Hanze. 
+
+
+Door het onderzoek naar de effecten van muziek op de hartslag kunnen mensen een beter beeld krijgen over de impact van muziek op het cardiovasculair systeem, En de effecten op de gezondheid van mensen door de muziek. Dit is van belang bij de gezondheidszorg waar muziek in gezet kan worden om de hartslag te verhogen of te verlagen om bepaalde symptomen van ziekte aan te tonen zoals PTSD of psychische problemen. Door te kijken of de patiënt zijn hartslag omhoog gaat door de muziek kunnen misschien symptomen van deze aandoeningen tevoorschijn komen. 
+
+Ook helpt dit onderzoek bij het psychologische welzijn, door dit onderzoek kunnen mensen een beter idee krijgen van de impact van muziek op emoties van mensen en hierop muziektherapieen aanpassen en weer verbeteren blijkt uit en onderzoek van de universiteit van Amsterdam.
+
+
+Er zijn al meerdere onderzoeken gedaan naar de invloed van muziek op je hartslag.
+
+Er zijn onderzoeken naar de emotionele impact van muziek op de hartslag.
+
+Onderzoeken naar de effecten van muziektempo op de hartslag.
+
+En hoe muziek varieert per persoon. Maar wat de andere onderzoeken missen maar wat dit onderzoek heeft is de actualiteit. Andere onderzoeken zijn gedaan op de oudere generatie, maar mensen luisteren steeds meer muziek. Uit een onderzoek van het IFPI , de wereldwijde belangenbehartiger van de muziekindustrie. Blijkt dat er in 2022 meer dan 10% meer muziek is geluisterd door mensen. Het is van 18.4 uur per week in 2021 naar 20.1 uur per week gegaan in 2022. Wat dit te maken heeft met de actualiteit is dat de hoeveelheid muziek kan zorgen voor een afname in de effecten van muziek in het cardiovasculair systeem. Waardoor mensen als ware een immuniteit opbouwen aan de reactie van het lichaam op de mens. Mede door deze reden is dit onderzoek van belang om de effecten te zien en te vergelijken met andere onderzoeken.
+
+Dit onderzoek is gedaan door een groep mensen van de Hanze dat een groep mensen op de Hanze heeft gevraagd om mee te doen aan dit onderzoek. Eerst werd hun hartslag gemeten en daarna werd de  muziek gedraaid en tussendoor werd de hartslag nog een keer gemeten. Uiteindelijk werden alle data samengebracht en onderzocht. 
+
+Met dit onderzoek kunnen een aantal hypotheses beantwoord worden. Verhoogd ruige muziek de hartslag, Heeft ruige muziek geen effect op de hartslag of verlaagd ruige muziek juist de hartslag. Met dit onderzoek kunnen deze vragen door middel van grafieken en cijfers beantwoord worden. 
+
+
+uni amsterdam
+
+https://www.uva.nl/shared-content/faculteiten/nl/faculteit-der-maatschappij-en-gedragswetenschappen/nieuws/2020/12/muziek-en-stress.html?cb
+
+symptomen vinden 
+
+https://www.nature.com/articles/s41598-021-03374-w
+
+muziek en PTSD
+
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5744879/
 
 # Materialen en Methoden
 
@@ -94,6 +129,7 @@ Beschrijf de gebruikte statistische methoden.
 Beschrijf wat je zelf in het kader van dit onderzoek hebt ontwikkeld aan methodologieën. Geef de naam van scripts/programma’s en waar deze (in je repo) te vinden zijn.
 
 Deze sectie bevat tussen de 400-800 woorden.
+
 
 # Resultaten
 
