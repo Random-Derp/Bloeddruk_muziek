@@ -1,28 +1,396 @@
 ---
-title: "logboek van Onderzoek naar de correlatie tussen hartslag en muziek"
+title: "logboek van Jort Onderzoek naar de correlatie tussen hartslag en muziek"
 output:
-  html_document:
-    css: style.css
-    toc: true
-    theme: united
+ html_document:
+   css: style.css
+   toc: true
+   toc_float:
+     collapsed: false
+     smooth_scroll: false
+   theme: united
 author: 'Jort Gommers'
 date: '24/4/2023'
 ---
 
-# prelimitaries
 
-Dit onderzoek was gedaan in de maand mei-juni,2023 in de hanze universiteit Groningen.
+### Logboek Jort Gommers
 
-# introduction
-Dit is het logboek van Jort 
+
+### Wie ben ik
+
+
+Hallo, Ik ben Jort en ik studeer bio-informatica op de Hanzehogeschool Groningen.
+Dit is mijn eerste studiejaar. Samen met 3 andere eerstejaars Bram Koobs, Mathijs Snijder en Adib Alhasan heb ik onderzoek gedaan naar hoe muziek invloed heeft op de hartslag en bloeddruk van studenten op de Hanze.
+
+
+
+
+## Introductie
+Dit onderzoek is uitgevoerd voor de opleiding Bio-Informatica op de Hanzehogeschool Groningen. Samen met mijn groepsgenoten Mathijs Snijder, Adib ALhasan en Bram Koobs moesten wij een onderzoek bedenken dat in het vierde kwartaal afgerond kan worden. Na een korte brainstormsessie kwam de groep op het idee om een onderzoek naar muziek te doen. Hierbij willen wij graag onderzoeken wat het effect is van intense (als in drukke) muziek op de hartslag en bloeddruk. Omdat we ons afvragen of studenten hierop reageren en wat dit doet met hun hartslag. Ook vinden we het interessant of een verandering in de bloeddruk zichtbaar is.
+Voor de intense muziek is het lied Terror Tourette - Radio Edit van Dr.CoZmo uitgekozen. Na verschillende muziek liedjes te hebben gehoord was onze groep het er
+anoniem over eens dat dit lied het meest intens was.
+
+
+# Doel
+
+
+Doel van dit onderzoek is om erachter te komen of het menselijk lichaam een reactie geeft op intense muziek. Onze onderzoeksgroep zijn studenten aan de Hanzehogeschool Groningen. Hierbij nemen we bij de studenten ook een vragenlijst af om erachter te komen of mogelijk andere elementen de scoreverschillen kunnen verklaren.
+Bijvoorbeeld of de onderzochte studenten net gesport hebben en of ze vooraf koffie hebben gedronken, wat allebei een verschil in de reactie op de muziek kan verklaren.
+Verder kijken we of er een verschil is in de reactie op de muziek tussen mannelijke en vrouwelijke studenten op de Hanzehogeschool Groningen.
+Om de verschillen te analyseren, meten we de bovendruk, onderdruk en hartslag zowel voordat er geluisterd wordt naar de intense muziek als na het luisteren van de muziek.
+
+
+# Data verzamelen
+
+
+De data voor dit onderzoek wilden we verzamelen door verschillende studenten op de Hanzehogeschool Groningen te vragen of ze mee willen doen aan ons onderzoek. Vooraf is uitgelegd waar het onderzoek over gaat.
+Voor het onderzoek hadden we twee apparaten: een hartslag en bloeddrukmeter voor de bloeddruk en hartslag en een pulse oximeter voor de hartslag die op de vinger werkt. Daarnaast is een telefoon en headset gebruikt voor het afspelen van de muziek.
+De muziek werd op 80%-90% volume gedraaid. We hebben gekozen voor het gebruik van twee apparaten voor de hartslag waardoor we eenvoudig kunnen zien of de hartslag rustig is voor de muziek werd opgezet. Dit is gedaan omdat studenten soms nerveus waren voor het onderzoek en de hartslag in rust al rond de 100 klopte, wat verstorend is voor de verzamelde data.
+
+
+Aan het begin van het onderzoek werd bij de proefpersoon de band van de hartslag en bloeddrukmeter om gedaan, hierbij is geen onderscheid gemaakt tussen de rechter en linkerarm. Op de tegenovergestelde arm is de pulse oximeter op de vinger gedaan. Voor de meting werd er eerst nog een aantal minuten gewacht om de hartslag van de proefpersoon te kalmeren.
+Als de hartslag in rust was, werden de hartslag en bloeddrukmeter aangezet, de gegevens die hieruit kwamen werden genoteerd.
+Vervolgens werd de muziek aangezet en werd na 10 seconden muziek de hartslag en bloeddrukmeter opnieuw aangezet. Dit is zo snel gedaan om te voorkomen dat mensen anders misschien al gewend raken aan de muziek terwijl de bloeddruk en hartslagmeter nog bezig was. Daarna werden de gegevens weer genoteerd en werd er een vragenlijst afgenomen met vragen die mogelijk van invloed zijn op de resultaten en deze kunnen verklaren.
+Vragen in de vragenlijst zijn: Heeft u vandaag cafeïne gehad, heeft u het afgelopen uur gesport en heeft u vormen van hart- en vaatziekten?
+Met deze vragen kunnen we uitschieters in de data ontdekken en verklaren.
+
+
+De ruwe data is te vinden in de repository van de github in de map raw data.
+Hier is de link: https://github.com/Random-Derp/Bloeddruk_muziek/tree/main/Raw_Data
+
+
+# Literatuur
+
+
+
+
+
+
+
+
+# Experimental work
+
+
+# 10-05-2023 (Wo)
+
+
+De dag is besteed aan het schrijven van een protocol. Eerst werd een aantal materialen getest of deze handig waren voor ons onderzoek.
+Een horloge dat de hartslag meet en een bloeddruk/hartslagmeter. De bloeddruk en hartslagmeter had nog geen batterijen waardoor die niet getest konden worden.
+Over het horloge dat hartslag meet is besloten dat die niet betrouwbaar genoeg is voor ons onderzoek. Na meerdere keren testen gaf de hartslag elke keer iets totaal anders aan waardoor de gegevens niet betrouwbaar genoeg konden zijn voor het onderzoek. Daarna is er een protocol opgesteld over hoe dit onderzoek uitgevoerd zou worden.
+Ten slotte is er een github gemaakt voor het onderzoek met daarin het protocol.
+
+
+# 11-05-2023(Do)
+
+
+Batterijen voor de bloeddruk en hartslagmeter zijn vandaag geregeld. De resultaten van de meter waren goed. In het protocol is gezet hoe de hartslag en bloeddrukmeter gebruikt gaat worden.
+Ook is er een koptelefoon geregeld met noise cancelling zodat de geluiden om de proefpersoon heen minder invloed hebben op de resultaten.
+Verder hebben we een tweede apparaat getest: een oximeter deze meter meet de hartslag via de wijsvinger of middelvinger. De resultaten kwamen overeen met de hartslag- en bloeddrukmeter. Onder andere om die reden is er besloten om
+ook de oximeter te gebruiken. De oximeter is uiteindelijk in ons protocol verwerkt.
+Tot slot is er een hypothese, nulhypothese en een onderzoeksvraag gemaakt voor het onderzoek.
+
+
+# 12-05-2023(Vr)
+
+
+Vandaag zijn de rollen verdeeld van wie wat doet in het onderzoek bij de deelnemers, wie doet de apparaten om en wie noteert de resultaten van het onderzoek.
+Ook is er een vragenlijst bedacht die belangrijk is voor ons onderzoek.
+
+
+Ten slotte zijn een aantal studenten van de Hanze in de bio-informatica lokaal gemeten en zijn de data hiervan opgeslagen.
+
+
+# 15-05-2023(Ma)
+Vandaag is er in de middag opnieuw data verzameld in het bio-informatica lokaal. De data is in een github bestand gezet en aan de data zijn eenheden toegevoegd.
+
+
+# 16-05-2023(Di)   
+
+
+Vandaag is er opnieuw data verzameld buiten het lokaal, daarna is in de data het hartslagverschil tussen de 2 tijden genoteerd. Hetzelfde geldt voor de bovendruk en onderdruk waarbij het verschil is genoteerd van voor en na de meting.
+
+
+# 17-05-2023(Wo)
+
+
+Nog een paar studenten buiten het lokaal gemeten aan het einde van de les. Daarna alles weer in de databestand genoteerd.
+
+
+# 22-5-2023(Ma)
+Vandaag zijn er grafieken gemaakt in de les en heb ik een aantal grafieken voor het onderzoek gemaakt.
+
 
 ```{r}
-# variablen voor Tabel
-datum <-('11-05-2023','12-05-2023','15-05-2023','22-05-2023','24-05-2023','31-05-2023','5-06-2023','9-06-2023','10-06-2023','12-06-2023')
-wat_gedaan <- ("Metingen in het lokaal","Nog een paar metingen in het lokaal","Metingen buiten het lokaal","grafieken gemaakt",'diff aangemaakt in csv','Tests gemaakt van Data','inleiding artikel gemaakt','Bezig met methode','Methode afgemaakt','bezig met logboek en resultaat bespreken')
-# Tabel maken
-df <- data.frame(Datum = datum, Wat = wat)
+data <- read.csv("/Users/jortgommers/Desktop/Website/cvwebpage/data.csv")
 
-df
+
+library(ggplot2)
 ```
 
+
+```{r}
+# Boxplot voor diff_bloeddruk_voor
+boxplot_bloeddruk_voor <- ggplot(data, aes(sexe,boven_bloeddruk_diff)) +
+ geom_boxplot(fill = "lightgreen") +
+ labs(x = "Geslacht", y = "Verschil in boven bloeddruk (mmHg)") +
+ theme_minimal()
+ print(boxplot_bloeddruk_voor)
+```
+Deze grafiek toont het verschil in bovenste bloeddruk (mmHg) voor verschillende geslachten. De x-as vertegenwoordigt het geslacht en de y-as vertegenwoordigt het verschil in de bovenste bloeddruk. De boxplot laat de verdeling van de gegevens zien, inclusief het gemiddelde, de mediaan en het bereik van de gegevens.
+
+
+In de grafiek zie je dat mannen duidelijk een grotere reactie op de muziek hebben ten opzichte van de bovendruk. Aangezien de mannelijke boxplot mediaan een stuk hoger ligt dan de vrouwelijke.
+
+
+
+
+```{r}
+# Boxplot voor bpm_diff
+boxplot_bpm <- ggplot(data, aes(sexe, bpm_diff)) +
+ geom_boxplot(fill = "lightblue") +
+ labs(x = "Geslacht", y = "Verschil in hartslag (bpm)") +
+ theme_minimal()
+
+
+ print(boxplot_bpm)
+```
+
+
+Deze grafiek laat het verschil in hartslag (bpm) zien voor verschillende geslachten. Op de x-as staat het geslacht en op de y-as staat het verschil in hartslag. De boxplot toont de verdeling van de gegevens, inclusief het gemiddelde, de mediaan en het bereik.
+
+
+Hier zie je dat het verschil tussen de reactie van de mannen niet zo groot is vergeleken met die van de vrouwen. Ook zie je aan de lijnen dat mannen erg variëren met hun reactie, de boxplot van de vrouwen is redelijk stabiel terwijl die van de mannen een paar uitschieters hebben.
+
+
+Op basis van deze grafiek kan geconcludeerd worden dat de reactie op muziek niet geslachts gerelateerd is als je naar het verschil in hartslag kijkt.
+
+
+
+
+```{r}
+# Boxplot voor diff_bloeddruk_na
+boxplot_bloeddruk_na <- ggplot(data, aes(sexe, onder_bloeddruk_diff)) +
+ geom_boxplot(fill = "lightpink") +
+ labs(x = "Geslacht", y = "Verschil in onder bloeddruk (mmHg)") +
+ theme_minimal()
+
+
+
+
+print(boxplot_bloeddruk_na)
+```
+
+
+Deze grafiek toont het verschil in onderdruk (mmHg) voor verschillende geslachten. Op de x-as staat het geslacht en op de y-as het verschil in de onderste bloeddruk. De boxplot geeft inzicht in de verdeling van de gegevens, inclusief het
+gemiddelde, de mediaan en het bereik.
+
+
+Ook hier is zichtbaar dat de mediaan bijna gelijk is tussen mannen en vrouwen in de onderdruk. Maar mannen zijn een stuk meer wisselend in uitslagen, blijkt uit de zwarte lijnen, vrouwen reageren ongeveer hetzelfde. De reactie van mannen verschilt redelijk.
+
+
+Wat dit zegt is dat de onderzochte mannen verschillend reageren op muziek. Bij de een gaat de onderdruk omhoog, bij de ander zie je dat de onderdruk omlaag gaat. Terwijl de onderzochte vrouwen ongeveer hetzelfde reageren.
+
+
+
+
+
+
+# 30-5-2023(Di)
+
+
+Deze dag was in de les uitleg over soorten testen die voor de dataset gebruikt konden worden om te zien of er een significant verschil is.
+Voor onze test heb ik daar een aantal tests voor gemaakt.
+
+
+Als eerst heb ik 3 shapiro wilk tests. De Shapiro-Wilk-test wordt gebruikt om te bepalen of een steekproef afkomstig is van een normaal verdeelde populatie en om te kunnen beoordelen of de gegevens een normale verdeling volgen.
+
+
+```{r}
+shapiro.test(data$bpm_diff)
+```
+De nulhypothese voor deze test is dat de data van het verschil in hartslag normaal verdeeld is.
+
+
+De p-waarde is een maat voor de significantie van het testresultaat. In dit geval is de p-waarde 0.06097, wat hoger is dan de minimale p-waarde van 0.05. Dit betekent dat er onvoldoende bewijs is om de nulhypothese te verwerpen.
+Met andere woorden, op basis van de testgegevens is er geen bewijs dat het verschil in hartslag niet normaal verdeeld is.
+
+
+```{r}
+shapiro.test(data$boven_bloeddruk_diff)
+```
+De nulhypothese voor deze test is dat de data van het verschil in bovendruk normaal verdeeld is.
+
+
+De p-waarde van 0.004524 is lager dan de minimale p-waarde van 0.05. Dit suggereert dat er voldoende bewijs is om de nulhypothese te verwerpen. Met andere woorden, op basis van de test kan geconcludeerd worden dat het verschil in bovendruk waarschijnlijk niet normaal verdeeld is.
+
+
+```{r}
+shapiro.test(data$onder_bloeddruk_diff)
+```
+De nulhypothese voor deze test is dat de data van het verschil in onderdruk normaal verdeeld is.
+
+
+De p-waarde van 0.01717 is een stuk lager dan de minimale p-waarde van 0.05. Dit suggereert dat er voldoende bewijs is om de nulhypothese te verwerpen. In andere woorden, op basis van de test kunnen we zeggen dat de onderdruk verschil
+waarschijnlijk niet normaal verdeeld is.
+
+
+
+
+Naast de Shapiro testen heb ik ook een aantal t-testen gemaakt.
+Deze test wordt gebruikt om te bepalen of er een significant verschil is tussen de  waarden van twee onafhankelijke groepen.
+```{r}
+ttest_bpm_diff <- t.test(data$bpm_diff ~ data$sexe)
+print(ttest_bpm_diff)
+```
+Hier wordt getest of de nulhypothese ‘een verschil in het hartslag verschil tussen mannen en vrouwen’ verworpen kan worden.
+
+
+Op basis van de p-waarde van 0.312 wat meer is dan de minimale p-waarde 0.05 kunnen we niet voldoende bewijs vinden om de nulhypothese te verwerpen.
+Dit suggereert dat er geen significant verschil is in de gemiddelde waarden van verschil in hartslag tussen voor en na meten met muziek tussen de groepen man en vrouw.
+
+
+```{r}
+# T-test voor diff_bloeddruk_voor
+ttest_onder_bloeddruk_diff <- t.test(data$onder_bloeddruk_diff ~ data$sexe)
+print(ttest_onder_bloeddruk_diff)
+```
+Hier wordt getest of de nulhypothese ‘is er verschil in de onderdruk verschil tussen mannen en vrouwen’ verworpen kan worden.
+
+
+Aangezien de p-waarde 0.475 hoger is dan de minimale p-waarde 0.05 is er onvoldoende bewijs  om de nulhypothese te verwerpen. Dit betekent dat er geen significant verschil is in het onderdruk verschil tussen mannen en vrouwen.
+
+
+
+
+```{r}
+# T-test voor diff_bloeddruk_na
+ttest_boven_bloeddruk_diff <- t.test(data$boven_bloeddruk_diff ~ data$sexe)
+print(ttest_boven_bloeddruk_diff)
+```
+Hier wordt er getest of de nulhypothese ‘is er verschil in de bovendrukverschil tussen mannen en vrouwen’ verworpen kan worden.
+
+
+Bij het verschil in bovendruk tussen mannen en vrouwen, is de p-waarde (0.0153) wat kleiner dan de minimale p-waarde 0.05. Dit betekent dat we voldoende bewijs hebben om de nulhypothese te verwerpen.
+Er is dus een significant verschil in de dataset.
+
+
+# 31-5-2023(Wo)
+Vandaag kregen we weer een uitleg over het maken van grafieken in R en over meerdere data's in 1 grafiek stoppen.
+Hiervoor heb ik ook een paar grafieken gemaakt.
+
+
+```{r}
+# Lijndiagram van boven- en onderbloeddruk voor en na de test
+plot <- ggplot(data, aes(x = id, y = boven_bloeddruk_voor, group = 1)) +
+ geom_line(aes(y = boven_bloeddruk_voor, color = "Voor-test")) +
+ geom_line(aes(y = boven_bloeddruk_na, color = "Na-test")) +
+ geom_line(aes(y = onder_bloeddruk_voor, color = "Voor-test")) +
+ geom_line(aes(y = onder_bloeddruk_na, color = "Na-test")) +
+ labs(x = "ID", y = "Bloeddruk", color = "Status") +
+ scale_color_manual(values = c("Voor-test" = "blue", "Na-test" = "red")) +
+ theme_minimal()
+ print(plot)
+```
+Lijndiagram van boven- en onderdruk voor en na de test:
+Dit diagram laat de veranderingen zien in de boven- en onderdruk voor en na een test. De lijnen worden getekend voor
+de "Voor-test" en "Na-test" met verschillende kleuren. De x-as vertegenwoordigt de ID en de y-as voor de eerste vertegenwoordigt de bovendruk.
+en de tweede de onderdruk. De kleuren blauw en rood worden gebruikt om onderscheid te maken tussen de voor- en na testresultaten.
+
+
+In deze grafiek is zichtbaar dat er in de bovendruk soms een stijging is maar de onderdruk redelijk gelijk blijft.
+Wat uit deze grafiek geconcludeerd kan worden is dat onderdruk niet veel te maken heeft met de invloed van intense muziek op het lichaam, op een paar uitschieters na. Terwijl bij de bovendruk over het algemeen een verschil zichtbaar is in de grafiek.
+```{r}
+ggplot(data, aes(x = id, y = bpm_voor, group = 1)) +
+ geom_line(aes(y = bpm_voor, color = "Voor test")) +
+ geom_line(aes(y = bpm_na, color = "Na test")) +
+ labs(x = "ID", y = "Hartslag", color = "Status") +
+ scale_color_manual(values = c("Voor test" = "blue", "Na test" = "red")) +
+ theme_minimal()
+```
+Lijndiagram van de hartslag voor en na de test:
+Dit diagram toont de veranderingen in de hartslag voor en na de test. Er worden lijnen getekend voor de "Voor test" en "Na test" met verschillende kleuren. De x-as vertegenwoordigt de ID en de y-as vertegenwoordigt de hartslag.
+Blauw en rood worden gebruikt om onderscheid te maken tussen de voor- en na-testresultaten.
+
+
+In de grafiek valt op dat de helft erg op de muziek reageert en de andere helft minder erg.
+Wat dit kan zeggen is dat de ene persoon gevoeliger is voor intense muziek dan de andere.
+```{r}
+ggplot(data, aes(x = dag_v.d._week, y = boven_bloeddruk_voor)) +
+ geom_col() +
+ labs(x = "Dag van de week", y = "Gemiddelde bovenbloeddruk") +
+ theme_minimal()
+```
+Staafdiagram van de gemiddelde bovendruk per dag van de week:
+Dit diagram toont de gemiddelde bovendruk voor elke dag van de week. De x-as vertegenwoordigt de dag van de week en de y-as vertegenwoordigt de gemiddelde bovendruk. Het diagram gebruikt staafjes om de gemiddelde waarden weer te geven.
+
+
+Hier wordt een duidelijk verschil aangetoond in bovendruk vergeleken met maandag en de andere dagen. De bovendruk is van een aantal dingen afhankelijk, waaronder stress en alcoholgebruik.
+Dus het kan zijn dat de deelnemers op maandag meer gestresst zijn dan de andere dagen of ze drinken in het weekend meer alcohol waardoor de bovendruk hoger is dan de andere dagen.
+
+
+
+
+
+
+# 05-6-2023(Ma)
+
+
+Vandaag kreeg ik te horen dat ik een stuk moest schrijven voor de wetenschappelijke paper.
+Ik ben begonnen met de introductie en werkwijze/methode.
+Daarvoor heb ik vandaag literatuuronderzoek gedaan door het lezen van artikelen en ben ik gestart met het schrijven van de inleiding.
+
+
+# 06-6-2023(Di)
+
+
+Vandaag ben ik verder gegaan met het schrijven van de introductie en heb ik het afgemaakt.Voor het schrijven heb ik verschillende onderzoeken gebruikt en de bronnen genoteerd.
+Hiernavolgend staan de artikelen die zijn gebruikt:
+
+
+Feneberg, Anja C., et al. "The effects of music listening on somatic symptoms and stress markers in the everyday life of women with somatic complaints and depression." Scientific Reports 11.1 (2021): 1-12.
+https://www.nature.com/articles/s41598-021-03374-w
+
+
+Landis-Shack, Nora, Adrienne J. Heinz, and Marcel O. Bonn-Miller. "Music therapy for posttraumatic stress in adults: A theoretical review." Psychomusicology: Music, Mind, and Brain 27.4 (2017): 334.
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5744879/
+
+
+
+
+
+
+# 07-6-2023 (Wo)
+Vandaag ben ik bezig geweest met de werkwijze en methode, deze is zo gemaakt dat het in een verhaal vertelt hoe het onderzoek is gelopen.
+Ook hebben we kort overlegd wie waarmee bezig gaat de komende tijd. De werkwijze en methode kwam vandaag af.
+
+
+# 09-6-2023 (Vr)
+
+
+Deze dag zijn we bezig geweest met het maken van de discussie en conclusie voor ons onderzoek.
+We hebben als groep besproken wat onze verwachtingen waren en de redenen voor deze uitslagen in ons onderzoek.
+Ook is afgesproken wie waar verder mee bezig moet zijn. Voor mij was dat het schrijven van de abstract (samenvatting) zodra de resultaten en grafieken klaar waren.
+
+
+# 10-6-2023 (Za)
+
+
+Vandaag heb ik de readme van de git aangepast, helaas lagen de github servers er op dat moment uit en is dat later pas ingezet.
+In de github readme zijn dingen toegevoegd van wie we zijn en hoe je de RMD zelf kunt bekijken.
+
+
+# 11-6-2023(Zo)
+
+
+Deze dag is besteed aan de opmaak van de github, alles is netjes in de juiste mappen gezet, ook is er een spellingscontrole gedaan over de inleiding en de werkwijze en methode.
+Daarna is er een begin gemaakt aan de abstract. Daarnaast is er een word count toegevoegd in de paper en zijn van blokjes tekst tabellen gemaakt.
+
+
+
+
+# 12-6-2023(Ma)
+
+
+Alle teksten staan in de git, de dag zelf zijn we nog bezig geweest met de resultaten uitwerken en de grafieken en testen toevoegen.
+De resultaten en testen zijn uitgelegd en wat de uitkomst betekent voor elke grafiek en test. Daarna kon de abstract/samenvatting afgemaakt worden over de resultaten en de rest
+van de paper.
