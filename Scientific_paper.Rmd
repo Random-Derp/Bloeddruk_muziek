@@ -44,7 +44,7 @@ De populariteit van "drukke" (intense) muziek is in de loop der jaren toegenomen
 
 De resultaten van dit onderzoek naar de effecten van muziek op de hartslag, dragen  bij aan een beter begrip van de impact van muziek op het cardiovasculaire systeem. Dit inzicht is van belang voor de gezondheidszorg, waar muziek kan worden gebruikt om specifieke symptomen van ziekten, zoals PTSS [@garrison2022musi] of psychische aandoeningen te verhelpen [@gabrielsson2011strong].
 
-Bovendien kunen de resultaten van dit onderzoek mogelijk bijdragen aan het psychologische welzijn van individuen. Het biedt inzicht in de impact van muziek op emoties, wat kan worden gebruikt voor aanpassingen en verbeteringen in muziektherapieën[@rolvsjord2010resource].
+Bovendien kunen de resultaten van dit onderzoek mogelijk bijdragen aan het psychologische welzijn van individuen. Het biedt inzicht in de impact van muziek op emoties, wat kan worden gebruikt voor aanpassingen en verbeteringen in muziektherapieën [@rolvsjord2010resource].
 
 Het belang van dit onderzoek ligt in het feit dat het zich richt op de actuele trends in de luistergewoonten van jonge mensen, in tegenstelling tot eerdere onderzoeken die voornamelijk gericht waren op de oudere generatie. De muziekconsumptie neemt wereldwijd toe blijkt uit onderzoek uitgevoerd door de IFPI.
 
@@ -62,7 +62,7 @@ Zoals hiervoor beschreven is het doel van dit onderzoek om de effecten van drukk
 
 
 # Materialen en Methoden
-materialen en methode
+
  [Github](https://github.com/Random-Derp/Bloeddruk_muziek)
 
 Tijdens dit onderzoek zijn verschillende meetinstrumenten gebruikt. De gebruikte meetinstrumenten waren de Omron M7 [hartslag/bloeddrukmeter](https://www.omron-healthcare.nl/nl/bloeddrukmeters/m7_intelli_it_2.html) en de [pulse oximeter](https://mediq.nl/producten/contec-cms50d1-saturatiemeter/11882?variantid=3059466). Deze instrumenten werden ingezet om de hartslag en bloeddruk te meten. 
@@ -262,6 +262,8 @@ https://www.sciencedirect.com/science/article/pii/S1053811920308363
 
 De IFPI onderzoek
 https://www.ifpi.org/ifpi-releases-engaging-with-music-2022-report/
+
+
 
 
 
