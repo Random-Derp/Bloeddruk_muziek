@@ -1,0 +1,136 @@
+---
+title: "De invloed van muziek op de hartslag en bloeddruk."
+author: |
+  | Adib $^1$, Bram $^1$, Jort $^1$, Mathijs $^1$
+  | $^1$Hanzehogeschool
+lang: nl
+output:
+  pdf_document:
+    toc: no
+  bookdown::pdf_document2:
+    keep_tex: no
+    toc: no
+    fig_caption: yes
+    includes:
+      in_header: include_tex_header.tex
+bibliography: scientific_paper.bib
+abstract:
+---
+
+
+
+
+```{r setup, message=FALSE, warning=FALSE, include=FALSE}
+knitr::opts_chunk$set(out.width = '100%', dpi=300) # configuratie voor figuur grootte en resolutie
+knitr::opts_chunk$set(echo = FALSE) # Deze regel zorgt ervoor GEEN ENKELE chunk getoond wordt!
+# Laad alle gebruikte bibliotheken hier
+library(ggplot2)
+```
+
+
+# Introductie
+Decennialang hebben mensen muziek beluisterd tijdens verschillende activiteiten, zoals sporten, autorijden of werken. Muziek is een onderdeel van ons leven geworden. Muziek motiveert mensen of brengt ze juist tot rust. Soms roept muziek emotionele reacties op, het kan mensen tot tranen beroeren.
+
+De populariteit van "drukke" (intense) muziek is in de loop der jaren toegenomen, zowel in sportomgevingen als bij evenementen in clubs en festivals. In dit onderzoek ligt de focus op de invloed van drukke muziek op de hartslag. Het onderzoek is uitgevoerd bij de studenten van de Hanzehogeschool Groningen.
+
+De resultaten van dit onderzoek naar de effecten van muziek op de hartslag, dragen  bij aan een beter begrip van de impact van muziek op het cardiovasculaire systeem. Dit inzicht is van belang voor de gezondheidszorg, waar muziek kan worden gebruikt om specifieke symptomen van ziekten, zoals PTSS [@garrison2022musi] of psychische aandoeningen te verhelpen [@gabrielsson2011strong].
+
+Bovendien kunen de resultaten van dit onderzoek mogelijk bijdragen aan het psychologische welzijn van individuen. Het biedt inzicht in de impact van muziek op emoties, wat kan worden gebruikt voor aanpassingen en verbeteringen in muziektherapieën[@rolvsjord2010resource].
+
+Het belang van dit onderzoek ligt in het feit dat het zich richt op de actuele trends in de luistergewoonten van jonge mensen, in tegenstelling tot eerdere onderzoeken die voornamelijk gericht waren op de oudere generatie. De muziekconsumptie neemt wereldwijd toe blijkt uit onderzoek uitgevoerd door de IFPI.
+
+Uit het onderzoek van de IFPI blijkt dat in 2022 mensen in vergelijking met het voorgaangde jaar meer dan 10% meer tijd aan het luisteren van muziek besteedden. In 2021 was de gemiddelde luistertijd 18,4 uur per week, in 2022 is dit gestegen naar 20,1 uur per week [@ifpi2022engaging].
+
+Deze toename in de luistertijd toont de groeiende rol van muziek in het leven van mensen aan en benadrukt het belang van onderzoek naar de effecten ervan. Hoewel eerder onderzoek is gedaan naar de impact van muziek op verschillende aspecten van het menselijk welzijn, missen deze onderzoeken de recente ontwikkelingen en trends in de muziekconsumptie.
+
+In dit onderzoek worden daarom niet alleen de hedendaagse effecten van muziek onderzocht, de resultaten worden vergeleken met eerdere bevindingen. Door in het onderzoek rekening te houden met de veranderingen in de luistergewoonten en de toenemende populariteit van muziek, kunnen we een beter begrip krijgen van hoe muziek varieert per persoon en welke invloed dit heeft op verschillende aspecten van het menselijk leven, zoals emoties, cognitie en gezondheid.
+
+Dit onderzoek is uitgevoerd door een team van onderzoekers van de Hanzehogeschool Groningen, waarbij een groep proefpersonen van de hogeschool is onderzocht. Eerst werd hun hartslag gemeten zonder muziek, daarna werd de  muziek gedraaid en tussendoor is de hartslag nog een keer gemeten. Uiteindelijk zijn alle data samengebracht en geanalyseerd.
+  
+Zoals hiervoor beschreven is het doel van dit onderzoek om de effecten van drukke (intense) muziek op de hartslag en bloeddruk te onderzoeken bij studenten van de Hanzehogeschool Groningen. Onze hypothese luidt als volgt: blootstelling aan drukke muziek zal leiden tot een verhoogde hartslag bij de deelnemende studenten. In het onderzoek word er niet uitgesloten dat drukke muziek een kalmerend effect op de hartslag kan hebben, waardoor deze verlaagt. Of de mogelijkheid dat drukke muziek geen significant effect heeft op de hartslag van de studenten. Door het op basis van deze hypothese te testen wordt er gehoopt meer inzicht te krijgen in de invloed van drukke muziek op het cardiovasculaire systeem.
+
+
+
+
+# Materialen en Methoden
+materialen en methode
+ [Github](https://github.com/Random-Derp/Bloeddruk_muziek)
+
+Tijdens dit onderzoek zijn verschillende meetinstrumenten gebruikt. De gebruikte meetinstrumenten waren de Omron M7 [hartslag/bloeddrukmeter](https://www.omron-healthcare.nl/nl/bloeddrukmeters/m7_intelli_it_2.html) en de [pulse oximeter](https://mediq.nl/producten/contec-cms50d1-saturatiemeter/11882?variantid=3059466). Deze instrumenten werden ingezet om de hartslag en bloeddruk te meten. 
+
+Gebruik is gemaakt van de muziek [Terror Tourette - Radio Edit](https://www.youtube.com/watch?v=FmlwbasiR6Q). Dit nummer is gekozen vanwege de ruigheid van de muziek.
+
+Verder is een [vragenlijst](https://github.com/Random-Derp/Bloeddruk_muziek/blob/main/Protocol/vragenlijst.txt) gebruikt waarin verschillende vragen over de proefpersonen werden gesteld, zoals vragen over cafeïnegebruik, leeftijd, laatste sportactiviteit en hart- en vaatziekten. Deze vragenlijst is anoniem door de studenten ingevuld, maar wel gekoppeld aan de onderzoeksresultaten.
+
+Voor het opslaan en verwerken van de gegevens is R Studio versie 4.3.0 gebruikt. In teams stond een CSV bestand. Deze is gebruikt voor het opslaan van de data, zodat deze vervolgens kon worden geanalyseerd. Ten slotte is er gebruikgemaakt van een [GitHub-repository](https://github.com/Random-Derp/Bloeddruk_muziek) waarin alle bestanden werden opgeslagen onder het kopje Raw_data, zodat er efficiënt kon worden samengewerkt aan de verwerking van de data. 
+
+
+ggplot2, knitr, tidyverse,gridextra 
+
+Datacollectie
+
+De materialen werden gebruikt om de hartslag en bloeddruk te meten.
+Eerst werd de proefpersoon gevraagd om zijn mouw op te stropen voor de nauwkeurigheid van de bloeddruk uitslag [@shay2023comparison]. Daarna werd de bloeddrukmeter om de arm naar keuze van de proefpersoon gedaan, uit een studie met veel proefpersonen bleek namelijk dat het niet significant uitmaakt aan welke arm de bloeddruk gemeten wordt [@gould1985blood]. Wel maakt de houding van de arm uit, daarom moesten proefpersonen beide armen op de tafel leggen [@netea2003body].
+Vervolgens werd de pulse oximeter aan de tegenovergestelde arm de wijsvinger op gedaan. Als het op dezelfde arm vastgezet wordt als de Omron bloeddrukmeter, flatlined de pulse oximeter. Er is geen artikel gevonden over welke vinger significant beter is voor hartslag bij de pulse oximeter. Voor dit onderzoek is gekozen voor de wijsvinger of middelvinger.
+
+Daarna werd gekeken of alles goed vast is gezet, vervolgens werd de bloeddrukmeter aangezet zodra de proefpersoon was gekalmeerd. Dit kalmeringsproces duurde net zolang totdat de bloeddruk op de oximeter constant was. De proefpersonen werden soms nerveus wanneer er iets gevraagd werd. Dit was zichtbaar doordat er een flinke afname van hartslag plaatsvond op de pulse oximeter toen alles klaargezet werd tijdens de testen vooraf aan het onderzoek. Vervolgens werd na de test de uitslag door dezelfde onderzoeker genoteerd. Voor de nauwkeurigheid werden de testen steeds door dezelfde 2 onderzoekers uitgevoerd.
+
+Na de eerste test werd er een [sennheiser koptelefoon](https://nl-nl.sennheiser.com/audio-headphones-stereo-hifi-closed-hd-215) op de proefpersoon zijn hoofd geplaatst. vervolgens werd de muziek op geluid hoogte 80-90% van de [smartphone](https://www.oneplus.com/nl/nord-2-5g) aangezet. Deze hoogte is gekozen omdat het niet pijn doet aan de oren en de intensiteit van de muziek nog goed voelbaar is. Na 10 seconden werd de bloeddrukmeter opnieuw aangezet voor de 2 de meting. De 10 seconden zijn gekozen omdat bij het testen de onderzoekers was opgevallen dat de hartslag na 30-50 seconden weer afnam. De grootste stijging vond de eerste 10 seconden plaats. De data werd vervolgens genoteerd en de proefpersoon kreeg een vragenlijst om ondertussen te beantwoorden waarna de volgende proefpersoon werd getest. 
+
+Vervolgens is met de formule test na - test het verschil in onderdruk, bovendruk en hartslag berekend. En zijn er grafieken gemaakt in R die gebruik maken van de library: ggplot2 versie 3.3.5 om plots te maken, tidyverse versie 1.3.0 voor het oproepen van meerdere packages en gridextra versie 2.3 om met de grid.arrange functie om op rasters gebaseerde plots in een rasterlay-out te rangschikken. De hypothese testen voor dit experiment waren de paired t-tests en de anova test.
+
+De paired t-test wordt gebruikt om te bepalen of er een significant verschil is tussen twee gemiddelden van gerelateerde metingen. Het vergelijkt de verschillen binnen elk paar metingen en bepaalt of dit verschil statistisch significant is.
+
+Een ANOVA-test is een statistische test die wordt gebruikt om te bepalen of er een significant verschil is tussen de gemiddelden van drie of meer groepen. 
+
+
+# Online bijlagen
+
+https://github.com/Random-Derp/Bloeddruk_muziek
+
+
+## Wordcount
+
+
+```{r wordcount, message=FALSE}
+wordcountaddin:::text_stats()
+```
+
+# Referenties
+Darki, Cyrus, et al. "The Effect of Classical Music on Heart Rate, Blood Pressure, and Mood." Cureus 14.7 (2022).
+https://www.cureus.com/articles/92593-the-effect-of-classical-music-on-heart-rate-blood-pressure-and-mood#!/#results
+
+Feneberg, Anja C., et al. "The effects of music listening on somatic symptoms and stress markers in the everyday life of women with somatic complaints and depression." Scientific Reports 11.1 (2021): 1-12.
+https://www.nature.com/articles/s41598-021-03374-w
+
+Landis-Shack, Nora, Adrienne J. Heinz, and Marcel O. Bonn-Miller. "Music therapy for posttraumatic stress in adults: A theoretical review." Psychomusicology: Music, Mind, and Brain 27.4 (2017): 334.
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5744879/
+
+Field, Zoë, Jeremy Miles, and Andy Field. "Discovering statistics using R." Discovering Statistics Using R (2012): 1-992.
+https://www.torrossa.com/en/resources/an/4913501
+
+Darki, Cyrus, et al. "The Effect of Classical Music on Heart Rate, Blood Pressure, and Mood." Cureus 14.7 (2022).
+https://www.cureus.com/articles/92593-the-effect-of-classical-music-on-heart-rate-blood-pressure-and-mood#!/#results
+
+Feneberg, Anja C., et al. "The effects of music listening on somatic symptoms and stress markers in the everyday life of women with somatic complaints and depression." Scientific Reports 11.1 (2021): 1-12.
+https://www.nature.com/articles/s41598-021-03374-w
+
+Landis-Shack, Nora, Adrienne J. Heinz, and Marcel O. Bonn-Miller. "Music therapy for posttraumatic stress in adults: A theoretical review." Psychomusicology: Music, Mind, and Brain 27.4 (2017): 334.
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5744879/
+
+Field, Zoë, Jeremy Miles, and Andy Field. "Discovering statistics using R." Discovering Statistics Using R (2012): 1-992.
+https://www.torrossa.com/en/resources/an/4913501
+
+Gabrielsson, A. (2011). Strong experiences with music: Music is much more than just music. OUP Oxford.
+https://books.google.nl/books?hl=nl&lr=&id=qnGqpqoimc4C&oi=fnd&pg=PP1&dq=people+listen+more+to+music&ots=2XfC_LljeB&sig=N60iJmH2SHe8bCsSWtdZ-p8pybE&redir_esc=y#v=onepage&q=people%20listen%20more%20to%20music&f=false
+
+Rolvsjord, R. (2010). Resource-oriented music therapy in mental health care. Gilsum, NH: Barcelona Publishers.
+https://approaches.gr/wp-content/uploads/2015/09/Approaches_22_2010.pdf#page=26
+
+Koelsch, S. (2020). A coordinate-based meta-analysis of music-evoked emotions. NeuroImage, 223, 117350.
+https://www.sciencedirect.com/science/article/pii/S1053811920308363
+
+De IFPI onderzoek
+https://www.ifpi.org/ifpi-releases-engaging-with-music-2022-report/
+
+
