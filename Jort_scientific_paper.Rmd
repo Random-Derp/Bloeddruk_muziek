@@ -33,7 +33,7 @@ Decennialang hebben mensen muziek beluisterd tijdens verschillende activiteiten,
 
 De populariteit van "drukke" (intense) muziek is in de loop der jaren toegenomen, zowel in sportomgevingen als bij evenementen in clubs en festivals. In dit onderzoek ligt de focus op de invloed van drukke muziek op de hartslag. Het onderzoek is uitgevoerd bij de studenten van de Hanzehogeschool Groningen.
 
-De resultaten van dit onderzoek naar de effecten van muziek op de hartslag, dragen  bij aan een beter begrip van de impact van muziek op het cardiovasculaire systeem. Dit inzicht is van belang voor de gezondheidszorg, waar muziek kan worden gebruikt om specifieke symptomen van ziekten, zoals PTSS [@garrison2022musi] of psychische aandoeningen te verhelpen [@gabrielsson2011strong].
+De resultaten van dit onderzoek naar de effecten van muziek op de hartslag, dragen  bij aan een beter begrip van de impact van muziek op het cardiovasculaire systeem. Dit inzicht is van belang voor de gezondheidszorg, waar muziek kan worden gebruikt om specifieke symptomen van ziekten, zoals PTSS [@garrison2022music] of psychische aandoeningen te verhelpen [@gabrielsson2011strong].
 
 Bovendien kunen de resultaten van dit onderzoek mogelijk bijdragen aan het psychologische welzijn van individuen. Het biedt inzicht in de impact van muziek op emoties, wat kan worden gebruikt voor aanpassingen en verbeteringen in muziektherapieën [@rolvsjord2010resource].
 
