@@ -1,5 +1,5 @@
 ---
-title: "Onderzoek naar de correlatie tussen hartslag en muziek"
+title: "Logboek van Bram Koobs"
 output:
   html_document:
     css: style.css
@@ -8,52 +8,194 @@ output:
     toc_float:
       collapsed: yes
       smooth_scroll: yes
-author: 'Bram(456146)'
+author: 'Bram Koobs(456146)'
 date: '9/5/2023'
 ---
 
-## Meetmomenten
- * 11-5 eerste meetmoment in het lokaal
- * 12-5 eerste meetmoment buiten het lokaal
- * 15-5 tweede meetmoment buiten het lokaal
- * 2-6 derde meetmoment buiten het lokaal, metingen gedaan door Mathijs en Bram
- * 5-6 vierde meetmoment buiten het lokaal, metingen gedaan door Mathijs en Bram
- * 9-6 werken aan scientific paper
+## Preliminaries
+Mijn naam is Bram Koobs, ik studeer Bio-informatica aan de Hanze hogeschool. Voor dit eerstejaars project werk ik samen met Mathijs Snijder en Jort Gommers.
+Mijn groepsgenoten zijn ook eerstejaars Bio-informatica studenten aan de Hanze hogeschool.
 
-## Uitleg
-bpm_diff is het hartslag verschil; (bpm_na - bpm_voor)
+We zijn me dit onderzoek gestart in eind mei. Alle metingen zijn op studenten aan de Hanze gedaan. Dit maakte het makkelijker om proefpersonen te vinden. Maar zorgde er ook voor dat er minder variatie tussen de proefpersonen zit.
+
+## Introductie
+Het onderzoek gaat over harstlagfrequentie en bloeddruk omdat iedereen in het project interesse had in beweging en gezondheid. Informatie over het hart en het cardiovasculair systeem wordt vaak gebruikt om iemands gezondheid te beschrijven.
+Het is algemeen bekend dat beweging invloed heeft op de harstlagfrequentie, maar wat heeft hier nog meer invloed op? We hadden allemaal een keer ergens gehoord dat klassieke muziek de harstlagfrequentie verlaagd, maar kan dit ook andersom?
+
+## Doel
+Het doel van het onderzoek om erachter te komen wat de invloed van (drukke) muziek op harstlagfrequentie en bloeddruk is.
+
+## Data verzamelen
+De data voor het onderzoek is verworven door van studenten op het hanze terein hun harstlagfrequentie en bloeddruk te testen, en deze studenten een paar vragen te stellen. De resultaten van de testen en vragen zijn in csv-formaat opgeschreven/opgeslagen.
+Voor de tests gebruiken wij een Hartslag/bloeddruk meter (Omron M7 intelli IT HEM-7322T-E, 2017 uitvoering). We testen elk proefpersoon 2 keer, 1 keer voor deze de muziek heeft gehoord, en 1 keer na het beluisteren van de muziek.
+
+## Theorie
+In principe gaat het onderzoek niet over de totale harstlagfrequentie en bloeddruk van de proefpersoon, maar over het verschil tussen voor en na afspelen van de muziek. We gingen ervan uit dat er factoren zijn die invloed hebben op het verschil.
+Daarom hebben wij de volgende factoren genoteerd: 
+
+Leeftijd, Sexe/geslacht, dag v.d. week, het tijdstip, recent fysiek actief (lopen/fietsen), op de dag van meten caffeine geconsumeerd of of de proefpersoon (potentiële) hartproblemen heeft.
+
+Naast dag van de week en het tijdstip hebben we alle factoren gevraagd aan de proefpersonen.
+
+
+## Werkmomenten
+
+### 9-5-2023 (Di)
+Dit logboek is aangemaakt. Ook is er een header voor de csv bedacht, deze is nog niet definitief.
+
+### 10-5-2023 (Wo)
+Materialen voor het onderzoek verzameld en getest. We waren aanvankelijk van plan om een Fitbit te gebruiken voor het meten van de hartslag, deze was echter moeilijk af te lezen, en gaf inconsequente meetresultaten.
+Met alle groepsgenoten is er een protocol voor het uitvoeren van de metingen opgezet en is er een github aangemaakt. Ik heb een soort-gelijk onderzoek gevonden: https://www.cureus.com/articles/92593-the-effect-of-classical-music-on-heart-rate-blood-pressure-and-mood#!/.
+
+### 11-5-2023 (Do)
+Meer materiaal verkregen: Een bloeddruk- en hartslagmeter, een koptelefoon en een oximeter. De oximeter was nodig omdat het apparaat die bloeddruk en hartslag meet niet alleen hartslag kan meten.
+Als er voor elke harstlagfrequentie-meting ook meteen 1 minuut lang de bloeddruk moet worden gemeten maakt dat het moeilijk om in te schatten wanneer de proefpersoon in rust is. De oximeter heeft rond de 5 seconden nodig om een meetresultaat te krijgen.
+De hypothese, de nulhypothese en de onderzoeksvraag van het onderzoek zijn vandaag besloten.
+
+
+## Meetmomenten
+
+### 11-5-2023 (Do)
+In ons eigen lokaal gemeten.
+
+### 12-5-2023 (Vr)
+Buiten het lokaal gemeten.
+
+### 15-5-2023 (Ma)
+Buiten het lokaal gemeten.
+
+### 17-5-2023 (Wo)
+Buiten het lokaal gemeten.
+
+### 2-6-2023 (Vr)
+Buiten het lokaal gemeten, metingen gedaan door Mathijs en Bram
+
+### 5-6-2023 (Ma)
+Buiten het lokaal gemeten, metingen gedaan door Mathijs en Bram
+
+
+## Uitwerkmomenten
+
+### 9-6-2023 (Vr)
+Deze dag werd besteed door met z'n alle tekst te schrijven.
+
+### 10-6-2023 (Za)
+Zoveel mogelijk ideeën voor mogelijke grafieken bedacht. Elke grafiek heb ik een minimale uitwerking gegeven, zo heeft de groep een ruim scala aan opties/keuze.
+
+### 12-6-2023 (Ma)
+De groep heeft de beste grafieken gekozen. De gekozen grafieken heb ik verder uitgewerkt. Ook heb ik bij elke grafiek de p-waardes berekend.
+
+### 30-6-2023 (Vr)
+Plan van aanpak voor het logboek opgesteld.
+
+### 1-7-2023 (Za)
+Logboek aangevuld.
+
+### 2-7-2023 (Zo)
+Logboek afgerond.
+
+
+## Uitleg en data visualisatie
 ```{r, echo = FALSE}
 library(ggplot2)
 
-file <- read.csv(
-  "/homes/blkoobs/Documents/Kwartaal_4/R-Code/Bloeddruk_en_muziek/data.csv")
+file <- read.csv("D:\\HW\\R-code\\mydata.csv")
 
-print(paste0("gemiddelde leeftijd = ",
-mean(file$leeftijd)))
-print(paste0("gemiddelde bpm verschil = ",
-mean(file$bpm_diff)))
-print(paste0("gemiddelde boven bloeddruk verschil = ",
-mean(file$boven_bloeddruk_diff)))
-print(paste0("gemiddelde onder bloeddruk verschil = ",
-mean(file$onder_bloeddruk_diff)))
+leeftijd <- mean(file$leeftijd)
+bpm_verschil <- mean(file$bpm_diff)
+bovendruk_verschil <- mean(file$boven_bloeddruk_diff)
+onderdruk_verschil <- mean(file$onder_bloeddruk_diff)
 ```
+##### Van alle gemeten proefpersonen zijn dit de gemiddelde waardes:\
+De gemiddelde leeftijd = `r leeftijd`\
+gemiddelde bpm verschil = `r bpm_verschil`\
+gemiddelde boven bloeddruk verschil = `r bovendruk_verschil`\
+gemiddelde onder bloeddruk verschil = `r onderdruk_verschil`\
+bpm_diff is het verschil in harstlagfrequentie tussen na en voor het beluisteren van de muziek (bpm_na - bpm_voor). Hetzelfde geld voor boven- en onder bloeddruk.\
 
-
-```{r visualize 1, echo = FALSE}
+### Geslacht
+```{r gender en bpm, echo = FALSE}
 library(ggplot2)
-
-file <- read.csv(
-  "/homes/blkoobs/Documents/Kwartaal_4/R-Code/Bloeddruk_en_muziek/data.csv")
-
-ggplot(data = file, mapping = aes(x = sexe, y = bpm_diff, color = vragenlijst, size = leeftijd)) +
-geom_point(alpha = 0.8)
-```
-```{r visualize, echo = FALSE}
-library(ggplot2)
-
-file <- read.csv("/homes/blkoobs/Documents/Kwartaal_4/R-Code/Bloeddruk_en_muziek/data.csv")
-
+# read file
+file <- read.csv("D:\\HW\\R-code\\mydata.csv")
+# give data plot
 ggplot(data = file, mapping = aes(x = sexe, y = bpm_diff)) +
-geom_boxplot()
+geom_boxplot(fill = c("#7caab9", "#e97777")) +
+  theme_minimal() +
+  ylab("bpm verschil")
+
+gender_bpm <- t.test(bpm_diff ~ sexe, data = file)$p.value
 ```
 
+Onderschrift: In deze grafiek wordt de overeenkomst tussen geslacht en de harstlagfrequentie verschil tussen voor en na het beluisteren van de muziek.
+Naar het figuur kijkende lijkt het erop dat de harstlagfrequentie bij vrouwen gemiddeld net wat meer toeneemt bij het horen van drukke muziek, dan dat die van mannen dat doet.
+Ook valt op dat er meer spreiding tussen de resultaten zit bij mannen, dan dat er bij vrouwen tussen zit. De p-waarde van de grafiek is = `r gender_bpm`, deze is met een t-test berekend.
+
+```{r gender en bloeddruk, echo = FALSE}
+library(ggplot2)
+library(gridExtra)
+# read file
+file <- read.csv("D:\\HW\\R-code\\mydata.csv")
+# give values plot
+boven <- ggplot(data = file, mapping = aes(x = sexe, y = boven_bloeddruk_diff)) +
+geom_boxplot(fill = c("#7caab9","#e97777")) +
+  theme_minimal() +
+  ylab("boven bloeddruk verschil")
+onder <- ggplot(data = file, mapping = aes(x = sexe, y = onder_bloeddruk_diff)) +
+# create plot
+geom_boxplot(fill = c("#7caab9","#e97777")) +
+  theme_minimal() +
+  ylab("onder bloeddruk verschil")
+grid.arrange(boven, onder, ncol = 2)
+
+bovendruk <- t.test(boven_bloeddruk_diff ~ sexe, data = file)$p.value
+onderdruk <- t.test(onder_bloeddruk_diff ~ sexe, data = file)$p.value
+```
+
+Onderschrift: In deze grafiek wordt er gekeken naar de overeenkomst tussen geslacht en bloeddruk. Er zijn twee grafieken, een voor de bovendruk en een voor de onderdruk.
+Bij de onderdruk valt op dat de gemiddeldes erg dicht bij elkaar liggen, maar de variatie tussen de mannen groter is. Er zit aanzienlijk minder spreiding tussen de resultaten van vrouwen.
+Bij de bovendruk zit er meer verschil tussen de gemiddeldes (dan bij onderdruk). De bovendruk p-waarde van de grafiek = `r bovendruk`, en die van de onderdruk = `r onderdruk`, beide zijn berekend met een t-test.
+
+Wat ik opvallend vind over het verschil tussen mannen en vrouwen, is dat de harstlagfrequentie van vrouwen meer toeneemt dan die van mannen, maar dat de bloeddruk minder toeneemt als dat die van mannen doet.
+
+### Tijdstip van de dag
+```{r tijdstip en bpm verschil, echo = FALSE}
+library(ggplot2)
+# read file
+file <- read.csv("D:\\HW\\R-code\\mydata.csv")
+# give values plot
+file$tijdstip <- factor(file$tijdstip,levels = c("8-10", "10-12", "12-2", "2-4"))
+ggplot(data = file, mapping = aes(x = tijdstip, y = bpm_diff, fill = tijdstip)) +
+# create plot
+geom_boxplot() +
+  guides(fill="none") +
+  theme_minimal() +
+  ylab("bpm verschil")
+
+tijdstip <- summary(aov(bpm_diff ~ tijdstip, data = file))[[1]][["Pr(>F)"]][1] # extracts p-value
+```
+
+Onderschrift: In deze grafiek wordt er gekeken naar de invloed van hoelaat op de dag het is op de harstlagfrequentie. Het valt op dat het tijdstip 10-12 bij verre het laagste gemiddelde heeft,
+dit komt mogelijk omdat de meeste proefpersonen op dit tijdstip nog niet hadden geluncht. Op de andere tijdstippen hebben de meeste mensen of net ontbeten, of net geluncht.
+Een verhoogde hartslag tijdens de vertering zou kunnen komen doordat de maag en darmen meer bloed nodig terwijl ze werken. De p-waarde van deze grafiek = `r tijdstip`, dit is berekend met een ANOVA test.\
+Op het tijdstip 2-4 zijn maar 2 personen getest, deze data heeft praktisch geen waarde bij het maken van een conclusie, en is dus niet meegenomen.
+
+### Rusthartslag
+```{r bpm voor en bpm verschil, echo = FALSE}
+library(ggplot2)
+# read file
+file <- read.csv("D:\\HW\\R-code\\mydata.csv")
+# give variables plot
+ggplot(data = file, mapping = aes(x = bpm_voor, y = bpm_diff)) +
+# create plot
+geom_point() +
+  theme_minimal() +
+  geom_smooth(formula = y ~ x, method = "loess")
+ 
+bpm_rust <- (t.test(file$bpm_voor, file$bpm_na, paired = TRUE, alternative = "less"))[3]
+```
+
+Onderschrift: In deze grafiek wordt er gekeken naar wat de invloed is van rusthartslag op hoe sterk een persoon op muziek reageert. Het is erg opvallend dat mensen met een rusthartslag/harstlag voor de muziek onder ~72 veel meer reageren dan mensen boven 72.
+Bij een rusthartslag boven de 72 wordt het verschil vrijwel constant. Deze afvlakking is waarschijnlijk een gevolg van een tekort aan data, of omdat de proefpersoon al gestrest was voor de meting begon (en evensnel rustiger werd als dat deze gestrest raakte).
+Mensen met een rusthartslag rond de 63 reageerden het extreemst/sterkst op de muziek.
+De p-waarde van deze grafiek = `r bpm_rust`, dit is berekend met een paired t-test.
