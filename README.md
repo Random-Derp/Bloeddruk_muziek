@@ -1,6 +1,6 @@
 # Onderzoek naar het verschil in Bloeddruk bij heftige muziek
 
-### auteurs: Jort Mathijs Adib Bram
+### auteurs: Jort Mathijs Bram
 ### versie: 1.0
 ### datum: 01-05-2023
 ### operating system: linux,mac-os,windows
@@ -27,4 +27,4 @@ Open deze file om ons onderzoek met de gegevens te zien.
 
 
 # contact
-voor meer informatie contacteer dan 1 van onze ontwikkelaars Jort(j.r.gommers@st.hanze.nl),Bram(mail),Adib(mail),Mathijs(mail)
+voor meer informatie contacteer dan 1 van onze ontwikkelaars Jort(j.r.gommers@st.hanze.nl),Bram(b.l.koobs@st.hanze.nl),Mathijs(m.snijder@st.hanze.nl)
