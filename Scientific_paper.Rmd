@@ -35,7 +35,7 @@ Al jaren luisteren mensen naar muziek als ze aan het sporten zijn, auto rijden o
 
 Het geeft ons motivatie, het brengt mensen tot rust en kan zelfs mensen laten huilen.
 
-Ook is de populariteit van ‘drukke’ muziek omhoog gegaan, zowel bij sport als in clubs en festivals. Dit onderzoek specialiseert zich in de invloed van drukke muziek op de hartslag op de universiteit van de Hanze.
+Ook is de populariteit van ‘drukke’ muziek omhoog gegaan (Bron 5), zowel bij sport als in clubs en festivals. Dit onderzoek specialiseert zich in de invloed van drukke muziek op de hartslag op de universiteit van de Hanze.
 
 
 Door het onderzoek naar de effecten van muziek op de hartslag kunnen mensen een beter beeld krijgen over de impact van muziek op het cardiovasculair systeem, En de effecten op de gezondheid van mensen door de muziek. Dit is van belang bij de gezondheidszorg waar muziek in gezet kan worden om de hartslag te verhogen of te verlagen om bepaalde symptomen van ziekte aan te tonen zoals PTSD of psychische problemen. Door te kijken of de patiënt zijn hartslag omhoog gaat door de muziek kunnen misschien symptomen van deze aandoeningen tevoorschijn komen.
@@ -166,7 +166,8 @@ Als hij juist onder nul zit betekent het dat er een afname was in bpm bij de twe
 Als wij ons resultaat vergelijken met een ander vergelijkbaar onderzoek (bron 1) kun je zien dat de reactie op de drukke muziek een stuk minder heftig is vergeleken met het andere onderzoek.
 Ook zie je bij de jongens dat ze kalmeren van de drukke muziek in plaats van dat de hartslag stijgt.
 
-Uitslag test 1: De p-waarde = `r sexe_test`, dit is veel hoger dan 0,05. Deze waarde stelt de nulhypothese vast, want dit bevestigt dat er geen significante correlatie is tussen bpm verschil en sexe.
+Uitslag test 1: De p-waarde = `r sexe_test`, dit is veel hoger dan 0,05. Deze waarde stelt de nulhypothese vast, want dit bevestigt dat er geen significante correlatie is tussen bpm verschil en sexe. De p-waarde is met een t-test berekend,
+deze is niet paired omdat bij elk proefpersoon maar 1 cijfer hoort. Er wordt niet naar een voor en na gekeken maar naar de hoeveelheid van het verschil op zich.
 
 
 ## Figuur 2: Verschil tussen onder-en-boven bloeddruk verschil tussen mannen en vrouwen
@@ -195,9 +196,9 @@ De x-as is de sexe en de y-as is de bloeddruk verschil. Er valt te zien dat bij 
 De mannen zijn daarentegen ook meer verspreid dan de vrouwen. Bij de onder bloeddruk blijft het bij allebei ongeveer gelijk, maar gemiddeld gaat de onder bloeddruk wel een beetje omlaag.
 Hier zijn de mannen ook weer meer verspreid dan de vrouwen. Er is geen vergelijkbaar onderzoek dat hier mee te vergelijken valt.
 
-Uitslag test 2 bovendruk: De p-waarde = `r bovendruk_test` wat veel kleiner is dan 0,05, en is dus significant.
-Uitslag test 2 onderdruk: De p-waarde = `r onderdruk_test` uit deze test is veel groter dan 0,05, en is dus niet significant.
-
+Uitslag test 2 bovendruk: De p-waarde = `r bovendruk_test` wat veel kleiner is dan 0,05, en is dus significant.\
+Uitslag test 2 onderdruk: De p-waarde = `r onderdruk_test` uit deze test is veel groter dan 0,05, en is dus niet significant.\
+De p-waardes zijn met een t-test berekend, deze zijn niet paired omdat bij elk proefpersoon maar 1 cijfer hoort. Er wordt niet naar een voor en na gekeken maar naar de hoeveelheid van het verschil op zich.
 
 
 ## Figuur 3: Verschil in bpm tussen mannen en vrouwen per tijdsvak
@@ -221,7 +222,9 @@ De x-as is het bpm verschil en de y-as is het tijdstip. Er valt op te merken dat
 Rond 10-12 waren er wel een paar uitschieters, maar het gemiddelde lag rond de nul. Rond 12-2 was er weer een toename in bpm.
 Dit schetst een beeld van op welke tijden van de dag de reactie het heftigst is.
 
-Uitslag test 3: De p-waarde = `r tijdstip_test`, hier is deze ook hoger dan 0.05 wat zegt dat tijd geen correlatie heeft met bpm verschil.
+Uitslag test 3: De p-waarde = `r tijdstip_test`, hier is deze ook hoger dan 0.05 wat zegt dat tijd geen correlatie heeft met bpm verschil. De p-waarde is met een ANOVA berekend, omdat deze test bedoeld is om meer dan 2 groepen mee te vergelijken.
+In dit geval is elk tijdstip een groep, waardoor er 4 groepen zijn.
+
 
 
 
@@ -243,7 +246,7 @@ geom_boxplot() +
 	theme(axis.text.x=element_blank(),
     	axis.ticks.x=element_blank())
 
-caffeine_test <- t.test(bpm_diff ~ caffeine, data = file)$p.value
+caffeine_test <- summary(aov(bpm_diff ~ file$vragenlijst, data = file))[[1]][["Pr(>F)"]][1]
 ```
 Figuur 4: In deze grafiek wordt er getoond wat de invloed van caffeine op de reactie op de muziek was. De betekenis van de kleuren is als volgt; rood als er cafeïne is geconsumeerd die dag,
 blauw als er geen cafeïne is genomen maar 1 van de andere factoren en grijs als er geen uitzonderingen waren. In de legenda staan de 3 variabelen die net genoemd zijn.
@@ -255,7 +258,8 @@ Er valt duidelijk te zien in de grafiek dat de factoren wel degelijk een impact 
 De blauwe heeft een grotere verspreiding dan de rode, maar de rode, dus de boxplot die cafeïne voorsteld, is consistent hoog. Het is opvallend dat niemand uit de groep met caffeine een negatief verschil heeft.
 Bij iedereen die caffeine had gehad ging het hart sneller kloppen bij het horen van de muziek. Dit laat dus zien dat cafeïne een grote factor is bij dit soort onderzoeken.
 
-Uitslag test 4: De p-waarde = `r caffeine_test` Ook deze test toont aan dat het niet significant is.
+Uitslag test 4: De p-waarde = `r caffeine_test` Ook deze test toont aan dat het niet significant is. De p-waarde is met een ANOVA berekend, omdat deze test bedoeld is om meer dan 2 groepen mee te vergelijken.
+In dit geval zijn er 3 groepen, de uitzondering caffeine, een andere uitzondering of geen uitzondering.
 
 ## Figuur 5: Correlatie tussen bpm in rust en bpm verschil
 ```{r bpm voor en bpm verschil, echo = FALSE}
@@ -270,6 +274,7 @@ geom_point() +
   geom_smooth(formula = y ~ x, method = "loess")
  
 rusthartslag_test <- (t.test(file$bpm_voor, file$bpm_na, paired = TRUE, alternative = "less"))[3]
+print(rusthartslag_test)
 ```
 Figuur 5:In deze grafiek wordt de correlatie tussen bpm en het effect van muziek op de bpm getoond. Op de x-as hebben we de bpm voor, oftewel de bpm die gemeten is voordat er muziek werd afgespeeld (ookwel de rusthartslag),
 en op de y-as hebben we het bpm verschil, oftewel het verschil tussen de eerste bpm meting en de tweede. De lijn geeft het gemiddelde aan van de bpm verschil en bpm voor.
@@ -277,6 +282,7 @@ De lijn begint redelijk hoog, zakt een beetje, schiet vervolgens rond rusthartsl
 Er valt op te merken dat mensen met een lagere bpm in rust een heftigere reactie vertonen dan de mensen met een hogere bpm.
 
 Uitslag test 5: De p-waarde = `r rusthartslag_test`, tussen de harstlagfrequentie in rust en hoe sterk iemand reageert zit een relatie. Deze test toont aan dat het significant is.
+De p-waarde is met een paired t-test berekend, deze is paired omdat de test de data uit maar 1 meetmoment vergelijkt.
 
 
 
@@ -316,4 +322,5 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5744879/
 Field, Zoë, Jeremy Miles, and Andy Field. "Discovering statistics using R." Discovering Statistics Using R (2012): 1-992.
 https://www.torrossa.com/en/resources/an/4913501
 
-
+Dredge, Stuart, "Pop music is louder, less acoustic and more energetic than in the 1950s" Guardian 25.11 (2013).
+https://www.theguardian.com/technology/2013/nov/25/pop-music-louder-less-acoustic
