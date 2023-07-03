@@ -2,7 +2,7 @@
 title: Muziek heeft invloed op hartslag en bloeddruk.
 
 author: |
-  | Adib $^1$, Bram $^1$, Jort $^1$, Mathijs $^1$
+  | Bram $^1$, Jort $^1$, Mathijs $^1$
   | $^1$Hanzehogeschool
 
 lang: nl # dit zorgt er voor dat "abstract" "samenvatting" gaat heten
@@ -112,8 +112,6 @@ Heb je vandaag caffeïne gehad
 
 Heb je hart- en vaatproblemen
 
-Heb je medicatie genomen
-
 ### Software tools
 
 ```{r}
@@ -153,18 +151,22 @@ Anova test: Om verschillen in de hartslag respons tussen meer dan twee groepen t
 ```{r gender en bpm, echo = FALSE}
 library(ggplot2)
 # read file
-file <- read.csv("/homes/blkoobs/Documents/Kwartaal_4/R-Code/Bloeddruk_en_muziek/data.csv")
+file <- read.csv("D:\\HW\\R-code\\mydata.csv")
 # give data plot
 ggplot(data = file, mapping = aes(x = sexe, y = bpm_diff)) +
 geom_boxplot(fill = c("#7caab9","#e97777")) +
   theme_minimal() +
   ylab("bpm verschil")
  
- print(paste("p-value =",t.test(bpm_diff ~ sexe, data = file)$p.value))
+sexe_test <- t.test(bpm_diff ~ sexe, data = file)$p.value
 ```
-Figuur 1:In deze grafiek wordt weergegeven hoe erg de reactie van de hartslag op de muziek effect had. In het blauw hebben we de mannen en in het rood hebben we de vrouwen. De x-as heeft de sexe en de y-as heeft de bpm verschil, wat staat voor het verschil in bpm wat gemeten is, dus eerste meting - tweede meting. Als het boven nul is betekent het dat er een toename is geweest in hartslag bij de tweede meting, dus na de muziek, vergeleken met de eerste meting. Als hij juist onder nul zit betekent het dat er een afname was in bpm bij de tweede meting. In de grafiek valt duidelijk te zien dat de vrouwen gemiddeld een zwaardere reactie hebben op de muziek dan de mannen. Als wij ons resultaat vergelijken met een ander vergelijkbaar onderzoek (link) kun je zien dat de reactie op de drukke muziek een stuk minder heftig is vergeleken met het andere onderzoek. Ook zie je bij de jongens dat ze kalmeren van de drukke muziek in plaats van dat de hartslag stijgt.
+Figuur 1:In deze grafiek wordt weergegeven hoe erg de reactie van de hartslag op de muziek was. In het blauw hebben we de mannen en in het rood hebben we de vrouwen. De x-as heeft de sexe en de y-as heeft de bpm verschil,
+wat staat voor het verschil in bpm wat gemeten is, dus eerste meting - tweede meting. Als het boven nul is betekent het dat er een toename is geweest in hartslag bij de tweede meting, dus na de muziek, vergeleken met de eerste meting.
+Als hij juist onder nul zit betekent het dat er een afname was in bpm bij de tweede meting. In de grafiek valt duidelijk te zien dat de vrouwen gemiddeld een zwaardere reactie hebben op de muziek dan de mannen.
+Als wij ons resultaat vergelijken met een ander vergelijkbaar onderzoek (link) kun je zien dat de reactie op de drukke muziek een stuk minder heftig is vergeleken met het andere onderzoek.
+Ook zie je bij de jongens dat ze kalmeren van de drukke muziek in plaats van dat de hartslag stijgt.
 
-Uitslag test 1: De p-waarde is veel hoger dan 0,05. Deze waarde stelt de nulhypothese vast, want dit bevestigt dat er geen significante correlatie is tussen bpm verschil en sexe.
+Uitslag test 1: De p-waarde = `r sexe_test`, dit is veel hoger dan 0,05. Deze waarde stelt de nulhypothese vast, want dit bevestigt dat er geen significante correlatie is tussen bpm verschil en sexe.
 
 
 ## Figuur 2: Verschil tussen onder-en-boven bloeddruk verschil tussen mannen en vrouwen
@@ -172,7 +174,7 @@ Uitslag test 1: De p-waarde is veel hoger dan 0,05. Deze waarde stelt de nulhypo
 library(ggplot2)
 library(gridExtra)
 # read file
-file <- read.csv("/homes/blkoobs/Documents/Kwartaal_4/R-Code/Bloeddruk_en_muziek/data.csv")
+file <- read.csv("D:\\HW\\R-code\\mydata.csv")
 # give values plot
 boven <- ggplot(data = file, mapping = aes(x = sexe, y = boven_bloeddruk_diff)) +
 geom_boxplot(fill = c("#7caab9","#e97777")) +
@@ -185,13 +187,16 @@ geom_boxplot(fill = c("#7caab9","#e97777")) +
   ylab("onderdruk bloed")
 grid.arrange(boven, onder, ncol = 2)
 
-print(paste("p-value bovendruk =",t.test(boven_bloeddruk_diff ~ sexe, data = file)$p.value))
-print(paste("p-value onderdruk =",t.test(onder_bloeddruk_diff ~ sexe, data = file)$p.value))
+bovendruk_test <- t.test(boven_bloeddruk_diff ~ sexe, data = file)$p.value
+onderdruk_test <- t.test(onder_bloeddruk_diff ~ sexe, data = file)$p.value
 ```
-Figuur 2:In deze grafiek wordt het verschil tussen de twee metingen weergegeven van onder bloeddruk verschil en boven bloeddruk verschil. De x-as is de sexe en de y-as is de bloeddruk verschil. Er valt te zien dat bij de boven-bloeddruk grafiek de mannen een grotere toename hebben in bloeddruk dan de vrouwen. De mannen zijn daarentegen ook meer verspreid dan de vrouwen. Bij de onder bloeddruk blijft het bij allebei ongeveer gelijk, maar gemiddeld gaat de onder bloeddruk wel een beetje omlaag. Hier zijn de mannen ook weer meer verspreid dan de vrouwen. Er is geen vergelijkbaar onderzoek dat hier mee te vergelijken valt.
+Figuur 2:In deze grafiek wordt het verschil tussen de twee metingen weergegeven van onder bloeddruk verschil en boven bloeddruk verschil.
+De x-as is de sexe en de y-as is de bloeddruk verschil. Er valt te zien dat bij de boven-bloeddruk grafiek de mannen een grotere toename hebben in bloeddruk dan de vrouwen.
+De mannen zijn daarentegen ook meer verspreid dan de vrouwen. Bij de onder bloeddruk blijft het bij allebei ongeveer gelijk, maar gemiddeld gaat de onder bloeddruk wel een beetje omlaag.
+Hier zijn de mannen ook weer meer verspreid dan de vrouwen. Er is geen vergelijkbaar onderzoek dat hier mee te vergelijken valt.
 
-Uitslag test 2 bovendruk: De p-waarde uit deze test is veel kleiner dan 0,05, en is dus significant.
-Uitslag test 2 onderdruk: De p-waarde uit deze test is veel groter dan 0,05, en is dus niet significant.
+Uitslag test 2 bovendruk: De p-waarde = `r bovendruk_test` wat veel kleiner is dan 0,05, en is dus significant.
+Uitslag test 2 onderdruk: De p-waarde = `r onderdruk_test` uit deze test is veel groter dan 0,05, en is dus niet significant.
 
 
 
@@ -199,7 +204,7 @@ Uitslag test 2 onderdruk: De p-waarde uit deze test is veel groter dan 0,05, en 
 ```{r tijdstip en bpm verschil, echo = FALSE}
 library(ggplot2)
 # read file
-file <- read.csv("/homes/blkoobs/Documents/Kwartaal_4/R-Code/Bloeddruk_en_muziek/data.csv")
+file <- read.csv("D:\\HW\\R-code\\mydata.csv")
 # give values plot
 file$tijdstip <- factor(file$tijdstip,levels = c("8-10", "10-12", "12-2", "2-4"))
 ggplot(data = file, mapping = aes(x = tijdstip, y = bpm_diff, fill = tijdstip)) +
@@ -209,11 +214,14 @@ geom_boxplot() +
   theme_minimal() +
   ylab("bpm verschil")
 
-print(paste("p-value =",summary(aov(bpm_diff ~ tijdstip, data = file))[[1]][["Pr(>F)"]][1])) # extracts p-value
+tijdstip_test <- summary(aov(bpm_diff ~ tijdstip, data = file))[[1]][["Pr(>F)"]][1] # extracts p-value
 ```
-Figuur 3:In deze grafiek wordt het verschil in bpm verschil op verschillende tijdstippen getoond. De x-as is het bpm verschil en de y-as is het tijdstip. Er valt op te merken dat de meeste toename was rond 2-4 uur 's middags en 8-10 uur 's ochtends. Rond 10-12 waren er wel een paar uitschieters, maar het gemiddelde lag rond de nul. Rond 12-2 was er weer een toename in bpm. Dit schetst een beeld van op welke tijden van de dag de reactie het heftigst is.
+Figuur 3:In deze grafiek wordt het verschil in bpm verschil op verschillende tijdstippen getoond.
+De x-as is het bpm verschil en de y-as is het tijdstip. Er valt op te merken dat de meeste toename was rond 2-4 uur 's middags en 8-10 uur 's ochtends.
+Rond 10-12 waren er wel een paar uitschieters, maar het gemiddelde lag rond de nul. Rond 12-2 was er weer een toename in bpm.
+Dit schetst een beeld van op welke tijden van de dag de reactie het heftigst is.
 
-Uitslag test 3: De p-waarde is hier ook hoger dan 0.05 wat zegt dat tijd geen correlatie heeft met bpm verschil.
+Uitslag test 3: De p-waarde = `r tijdstip_test`, hier is deze ook hoger dan 0.05 wat zegt dat tijd geen correlatie heeft met bpm verschil.
 
 
 
@@ -221,7 +229,7 @@ Uitslag test 3: De p-waarde is hier ook hoger dan 0.05 wat zegt dat tijd geen co
 ```{r caffeine, echo = FALSE}
 library(ggplot2)
 # read file
-file <- read.csv("/homes/blkoobs/Documents/Kwartaal_4/R-Code/Bloeddruk_en_muziek/data.csv")
+file <- read.csv("D:\\HW\\R-code\\mydata.csv")
 # give variables other names
 caffeine <- file$vragenlijst == "caffeine"
 caffeine <- factor(caffeine,levels = c(TRUE,FALSE,NA))
@@ -235,17 +243,25 @@ geom_boxplot() +
 	theme(axis.text.x=element_blank(),
     	axis.ticks.x=element_blank())
 
-print(paste("p-value =",t.test(bpm_diff ~ caffeine, data = file)$p.value))
+caffeine_test <- t.test(bpm_diff ~ caffeine, data = file)$p.value
 ```
-Figuur 4: In deze grafiek wordt er getoond hoe heftig de reactie op de muziek was. De betekenis van de kleuren is als volgt; rood als er cafeïne is geconsumeerd die dag, blauw als er geen cafeïne is genomen maar 1 van de andere factoren en grijs als er geen uitzonderingen waren. Op de x-as wordt staan de 3 variabelen die net genoemd zijn. Er valt duidelijk te zien in de grafiek dat de factoren wel degelijk een impact hebben gehad op de metingen. De grijze boxplot is ook opmerkelijk laag vergeleken de blauwe en de rode. De blauwe heeft een grotere verspreiding dan de rode, maar de rode, dus de boxplot die cafeïne voorsteld, is consistent hoog. Dit laat dus zien dat cafeïne een grote factor is bij dit soort onderzoeken.
+Figuur 4: In deze grafiek wordt er getoond hoe heftig de reactie op de muziek was. De betekenis van de kleuren is als volgt; rood als er cafeïne is geconsumeerd die dag,
+blauw als er geen cafeïne is genomen maar 1 van de andere factoren en grijs als er geen uitzonderingen waren. In de legenda staan de 3 variabelen die net genoemd zijn.
+De boxplot links heeft het hoogste gemiddelde verschil, daarna andere uitzonderingen (recent gelopen of gefietst en hartproblemen),
+en het laagst is geen uizonderingen (geen caffeine, geen recente beweging en geen hartproblemen).
+Naast een uitschieter is de caffeine groep het consistentst.
 
-Uitslag test 4: Ook uit deze test is het niet significant.
+Er valt duidelijk te zien in de grafiek dat de factoren wel degelijk een impact hebben gehad op de metingen. De grijze boxplot is ook opmerkelijk laag vergeleken de blauwe en de rode.
+De blauwe heeft een grotere verspreiding dan de rode, maar de rode, dus de boxplot die cafeïne voorsteld, is consistent hoog. Het is opvallend dat niemand uit de groep met caffeine een negatief verschil heeft.
+Bij iedereen die caffeine had gehad ging het hart sneller kloppen bij het horen van de muziek. Dit laat dus zien dat cafeïne een grote factor is bij dit soort onderzoeken.
+
+Uitslag test 4: De p-waarde = `r caffeine_test` Ook deze test toont aan dat het niet significant is.
 
 ## Figuur 5: Correlatie tussen bpm in rust en bpm verschil
-```{r bpm voor en bpm verschil}
+```{r bpm voor en bpm verschil, echo = FALSE}
 library(ggplot2)
 # read file
-file <- read.csv("/homes/blkoobs/Documents/Kwartaal_4/R-Code/Bloeddruk_en_muziek/data.csv")
+file <- read.csv("D:\\HW\\R-code\\mydata.csv")
 # give variables plot
 ggplot(data = file, mapping = aes(x = bpm_voor, y = bpm_diff)) +
 # create plot
@@ -253,11 +269,14 @@ geom_point() +
   theme_minimal() +
   geom_smooth(formula = y ~ x, method = "loess")
  
-print(paste("p-value =",t.test(file$bpm_voor, file$bpm_na, paired = TRUE, alternative = "less"))[3])
+rusthartslag_test <- (t.test(file$bpm_voor, file$bpm_na, paired = TRUE, alternative = "less"))[3]
 ```
-Figuur 5:In deze grafiek wordt de correlatie tussen bpm en het effect van muziek op de bpm getoond. Op de x-as hebben we de bpm voor, oftewel de bpm die gemeten is voordat er muziek werd afgespeeld, en op de y-as hebben we het bpm verschil, oftewel het verschil tussen de eerste bpm meting en de tweede. De lijn geeft het gemiddelde aan van de bpm verschil en bpm voor. Er valt op te merken dat mensen met een lagere bpm in rust een heftigere reactie vertonen dan de mensen met een hogere bpm.
+Figuur 5:In deze grafiek wordt de correlatie tussen bpm en het effect van muziek op de bpm getoond. Op de x-as hebben we de bpm voor, oftewel de bpm die gemeten is voordat er muziek werd afgespeeld (ookwel de rusthartslag),
+en op de y-as hebben we het bpm verschil, oftewel het verschil tussen de eerste bpm meting en de tweede. De lijn geeft het gemiddelde aan van de bpm verschil en bpm voor.
+De lijn begint redelijk hoog, zakt een beetje, schiet vervolgens rond rusthartslag van 55 weer omhoog, en gaat bij een rusthartslag van 63 snel omlaag. Bij een rusthartslag boven de 72 reageren mensen amper op muziek, het verschil is zelfs net iets onder de nul.
+Er valt op te merken dat mensen met een lagere bpm in rust een heftigere reactie vertonen dan de mensen met een hogere bpm.
 
-Uitslag test 5: Deze test is wel significant bpm voor en bpm verschil hebben een relatie.
+Uitslag test 5: De p-waarde = `r rusthartslag_test`, tussen de harstlagfrequentie in rust en hoe sterk iemand reageert zit een relatie. Deze test toont aan dat het significant is.
 
 
 
@@ -295,6 +314,5 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5744879/
 
 Field, Zoë, Jeremy Miles, and Andy Field. "Discovering statistics using R." Discovering Statistics Using R (2012): 1-992.
 https://www.torrossa.com/en/resources/an/4913501
-
 
 
