@@ -118,13 +118,13 @@ Heb je hart- en vaatproblemen
 # Data voor grafiek
 naam <- c("R Markdown", "R", "ggplot2","gridExtra")
 versie <- c('2.11', '4.1', '3.3.5','2.3')
-referentie <- c("rmarkdown.rstudio.com", "www.r-project.org", "ggplot2.tidyverse.org","https://cran.r-project.org/web/packages/gridExtra/index.html")
+referentie <- c("rmarkdown.rstudio.com", "www.r-project.org", "ggplot2.tidyverse.org","cran.r-project.org/web/packages/gridExtra/index.html")
 doel <- c("Een opmaaktaal die R-code en tekst combineert voor rapporten en documentatie","Programmeertaal voor statistische analyse en visualisatie","Een krachtige R-bibliotheek voor datavisualisatie en grafieken","Helpt bij de opmaak van grafieken")
 
 # Tabel maken
-df <- data.frame(Naam = naam, Versie = versie, Referentie = referentie,Doel = doel)
+df <- data.frame(Naam = naam, Versie = versie, Referentie = referentie, Doel = doel)
 
-df
+knitr::kable(df)
 ```
 ### Methodologieën
 ```{r}
@@ -137,9 +137,9 @@ methode <- ("Deelnemers worden willekeurig gevraagd De hartslag wordt gemeten vo
 # Tabel maken
 df2 <- data.frame(Onderzoek = onderzoek, Doel = doel, Toepassing = toepassing,Methode = methode)
 
-df2
+knitr::kable(df2)
 ```
-#Statistische formules gebruikt
+# Statistische formules gebruikt
 
 T-tests: Om te bepalen of er significante verschillen zijn in de hartslag/bloeddruk tussen experimentele groepen.
 
@@ -163,7 +163,7 @@ sexe_test <- t.test(bpm_diff ~ sexe, data = file)$p.value
 Figuur 1:In deze grafiek wordt weergegeven hoe erg de reactie van de hartslag op de muziek was. In het blauw hebben we de mannen en in het rood hebben we de vrouwen. De x-as heeft de sexe en de y-as heeft de bpm verschil,
 wat staat voor het verschil in bpm wat gemeten is, dus eerste meting - tweede meting. Als het boven nul is betekent het dat er een toename is geweest in hartslag bij de tweede meting, dus na de muziek, vergeleken met de eerste meting.
 Als hij juist onder nul zit betekent het dat er een afname was in bpm bij de tweede meting. In de grafiek valt duidelijk te zien dat de vrouwen gemiddeld een zwaardere reactie hebben op de muziek dan de mannen.
-Als wij ons resultaat vergelijken met een ander vergelijkbaar onderzoek (link) kun je zien dat de reactie op de drukke muziek een stuk minder heftig is vergeleken met het andere onderzoek.
+Als wij ons resultaat vergelijken met een ander vergelijkbaar onderzoek (bron 1) kun je zien dat de reactie op de drukke muziek een stuk minder heftig is vergeleken met het andere onderzoek.
 Ook zie je bij de jongens dat ze kalmeren van de drukke muziek in plaats van dat de hartslag stijgt.
 
 Uitslag test 1: De p-waarde = `r sexe_test`, dit is veel hoger dan 0,05. Deze waarde stelt de nulhypothese vast, want dit bevestigt dat er geen significante correlatie is tussen bpm verschil en sexe.
@@ -216,7 +216,7 @@ geom_boxplot() +
 
 tijdstip_test <- summary(aov(bpm_diff ~ tijdstip, data = file))[[1]][["Pr(>F)"]][1] # extracts p-value
 ```
-Figuur 3:In deze grafiek wordt het verschil in bpm verschil op verschillende tijdstippen getoond.
+Figuur 3:In deze grafiek wordt de invloed van het tijdstip van de dag op de reactie op muziek getoond.
 De x-as is het bpm verschil en de y-as is het tijdstip. Er valt op te merken dat de meeste toename was rond 2-4 uur 's middags en 8-10 uur 's ochtends.
 Rond 10-12 waren er wel een paar uitschieters, maar het gemiddelde lag rond de nul. Rond 12-2 was er weer een toename in bpm.
 Dit schetst een beeld van op welke tijden van de dag de reactie het heftigst is.
@@ -245,7 +245,7 @@ geom_boxplot() +
 
 caffeine_test <- t.test(bpm_diff ~ caffeine, data = file)$p.value
 ```
-Figuur 4: In deze grafiek wordt er getoond hoe heftig de reactie op de muziek was. De betekenis van de kleuren is als volgt; rood als er cafeïne is geconsumeerd die dag,
+Figuur 4: In deze grafiek wordt er getoond wat de invloed van caffeine op de reactie op de muziek was. De betekenis van de kleuren is als volgt; rood als er cafeïne is geconsumeerd die dag,
 blauw als er geen cafeïne is genomen maar 1 van de andere factoren en grijs als er geen uitzonderingen waren. In de legenda staan de 3 variabelen die net genoemd zijn.
 De boxplot links heeft het hoogste gemiddelde verschil, daarna andere uitzonderingen (recent gelopen of gefietst en hartproblemen),
 en het laagst is geen uizonderingen (geen caffeine, geen recente beweging en geen hartproblemen).
@@ -303,6 +303,7 @@ wordcountaddin:::text_stats()
 ```
 
 # Referenties
+
 Darki, Cyrus, et al. "The Effect of Classical Music on Heart Rate, Blood Pressure, and Mood." Cureus 14.7 (2022).
 https://www.cureus.com/articles/92593-the-effect-of-classical-music-on-heart-rate-blood-pressure-and-mood#!/#results
 
